@@ -1,9 +1,9 @@
-
-
-body {
-    background-image: url(../imag/column.jpg);
-    background-size: cover;        
+* {
+    margin: 0;
+    padding: 0;
 }
+
+
 
 @media screen and (min-width: 350px) {
     * {
@@ -94,18 +94,22 @@ body {
     .divPresentacion {
         display: flex;
         text-align: justify;
-        color: rgb(50, 50, 241);
+        color: rgb(205, 13, 243);
         align-items: center;
         justify-content: center;
         margin-bottom: 30px;
         margin-top: 30px;
         width: 90%;
-        font-size: 30px;
+        font-size: 25px;
+        background-image: url(../imag/fondorela.jpg);
+        background-size: cover;
+        border-radius: 25px;
     }
     
     .divPresentacion p {
         font-style: italic;
         font-variant: small-caps;
+        padding: 20px 30px 20px 30px;
     }
     .botonInput {
         margin-bottom: 15px;
@@ -822,20 +826,23 @@ body {
     .divPresentacion {
         display: flex;
         text-align: justify;
-        color: rgb(50, 50, 241);
+        color: rgb(205, 13, 243);
         align-items: center;
         justify-content: center;
         margin-bottom: 30px;
         width: 40%;
         margin-left: 20px;
         margin-right: 20px;
-        font-size: 30px;
+        font-size: 35px;
+        background-image: url(../imag/fondorela.jpg);
+        background-size: cover;
     }
     
     .divPresentacion p {
-        padding: 60px;
+        padding: 30px 40px 30px 40px;
         font-style: italic;
         font-variant: small-caps;
+
     }
     .botonInput {
         margin-bottom: 15px;
@@ -846,16 +853,16 @@ body {
         text-align: center;
         color: white;
         align-items: center;
-        margin: 15px;
-        padding: 20px;
-        width: 45%;
+        margin: 20px;
+        padding: 10px;
+        width: 40%;
         flex-direction: column;
     }
     
     .iframeMapa {
         display: flex;
         width: 45%;
-        margin: 20px;
+        margin: 25px;
         align-items: center;
         text-align: center;
     }
@@ -1061,8 +1068,9 @@ body {
     }
 
     body {
-        background-image: url(../imag/column.jpg);
+        background-image: url("../imag/column.jpg");
         background-size: cover;        
+        background-attachment: fixed;
     }
 
     .gridnavContenedor {
