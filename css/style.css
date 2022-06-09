@@ -485,13 +485,29 @@ text-align: center;
         margin-right: 10px;
         transition: all 1s;
     }
+    .instaIcon {
+        width: 55px;
+        height: 55px;
+        position: fixed;
+        display: flex;
+        top: 194px;
+        right: 3px;
+        z-index: 1;
+        margin-bottom: 30px;
+        margin-right: 10px;
+        transition: all 1s;
+    }
 
     .faceIcon:hover {
         width: 70px;
         height: 70px;
         transform: scale(1.3);
     }
-
+    .instaIcon:hover {
+        width: 70px;
+        height: 70px;
+        transform: scale(1.3);
+    }
 
     .imgUno {
         background-image: url(../imag/consultorio1.jpg);
