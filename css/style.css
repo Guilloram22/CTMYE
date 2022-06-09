@@ -12,22 +12,22 @@
     }
     
     .serviciosGenerales {
-        width: 95%;
+        width: 90%;
         color: black;
-        margin: 10px;
+        margin-left: 25px;
         display: flex;
+        display: inline-block;
         flex-direction: column;
-        border-style: double;
         border-radius: 10px;
-        border-color: rgb(194, 25, 152);
         background-image: url(../imag/fondo-vertebral.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         justify-content: center;
-        align-items: center;
+text-align: center;
     }
     
     .serviciosGenerales p {
+        display: flex;
         margin-left: 15%;
         margin-right: 10%;
         padding: 15px;
@@ -155,9 +155,6 @@
         grid-template-rows: auto;
         grid-row-gap: 15px;
         margin: 10px;
-        border-style: double;
-        border-color: rgb(194, 25, 152);
-        border-radius: 10px;
         justify-items: center;
         align-items: center;
     }
@@ -330,6 +327,7 @@
         display: flex;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         text-align: center;
+        display: inline-block;
         width: 80%;
         height: 250px;
         margin-top: 15px;
@@ -358,11 +356,8 @@
         grid-template-rows: 1fr;
         grid-row-gap: 15px;
         margin: 10px;
-        border-style: double;
-        border-color: rgb(194, 25, 152);
-        border-radius: 10px;
-        justify-content:space-around;
-        align-content: space-between;
+        justify-content: space-around;
+        align-items: center;
         z-index: 999;
     }
 
@@ -377,6 +372,7 @@
         background-image: url(../imag/sag.jpeg);
         background-size: cover;
         border-radius: 10px;
+        border-color: cyan;
     }
 
     ul li {
@@ -389,16 +385,22 @@
         display: inline-block;
         border-radius: 5px;
         text-align: left;
+        justify-content:space-between;
+        align-items: stretch;
     }
 
     header a {
-        color: rgb(109, 101, 253);
-        border-style: solid;
-        border-color: rgb(109, 101, 253);
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        color: cyan;
         padding: 10px;
-        margin: 1px;
+        margin: 10px;
         border-radius: 10px;
         background-color: #161616;
+        border-top: double;
+        border-color: cyan;
+
     }
 
     a:link {
@@ -423,21 +425,17 @@
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
         flex-wrap: wrap;
-        border-style: double;
-        border-color: rgb(194, 25, 152);
-        border-radius: 10px;
-        justify-items: center;
-        align-items: center;
+
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border-bottom: double;
+        border-color:cyan ;
         grid-row-gap: 15px;
         margin: 10px;
         width: auto;
-        color: rgb(109, 101, 253);
+        color: rgb(239, 239, 243);
+        text-align: center;
     }
 
-    .footer a {
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        color: aquamarine;
-    }
 
     .audio {
         width: 100px;
@@ -737,9 +735,6 @@
         grid-row-gap: 5px;
         grid-column-gap: 5px;
         margin: 10px;
-        border-style: double;
-        border-color: rgb(194, 25, 152);
-        border-radius: 10px;
         justify-items: center;
         align-items: center;
     }
