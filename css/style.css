@@ -23,7 +23,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         justify-content: center;
-text-align: center;
+        text-align: center;
     }
     
     .serviciosGenerales p {
@@ -908,7 +908,7 @@ text-align: center;
         margin: 15px;
         padding: 15px;
     }
-    .gridContenedor {
+    /*.gridContenedor {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
@@ -1087,7 +1087,7 @@ text-align: center;
 
     .divlinfa:hover {
         width: 400px;
-    }
+    }*/
 
     body {
         background-image: url("../imag/column.jpg");
