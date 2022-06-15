@@ -1,1676 +1,752 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-
-
 @media screen and (min-width: 350px) {
-    * {
-        margin: 0;
-        padding: 0;
-    }
-
-    .serviciosGenerales {
-        width: 90%;
-        color: black;
-        margin-left: 25px;
-        display: flex;
-        display: inline-block;
-        flex-direction: column;
-        border-radius: 10px;
-        background-image: url(../imag/fondo-vertebral.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .serviciosGenerales p {
-        display: flex;
-        margin-left: 15%;
-        margin-right: 10%;
-        padding: 15px;
-        font-style: italic;
-        text-align: justify;
-        color: black;
-        width: 60%;
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .serviciosGenerales {
+    width: 90%;
+    color: black;
+    margin-left: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: inline-block;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-radius: 10px;
+    background-image: url(../imag/fondo-vertebral.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  .serviciosGenerales p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 15%;
+    margin-right: 10%;
+    padding: 15px;
+    font-style: italic;
+    text-align: justify;
+    color: black;
+    width: 60%;
+    -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 18px;
-
-    }
-
-    .serviciosGenerales h3 {
-        margin-top: 20px;
-        margin-left: 10%;
-        width: 15%;
-    }
-
-    .paraQuienes {
-        display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+  }
+  .serviciosGenerales h3 {
+    margin-top: 20px;
+    margin-left: 10%;
+    width: 15%;
+  }
+  .paraQuienes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-        display: inline-block;
-        width: 85%;
-        margin: 20px;
-        padding: 10px;
-        color: rgb(177, 169, 169);
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        text-align: justify;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 18px;
-
-    }
-
-    .paraQuienes h3 {
-        text-align: center;
-        margin: 20px;
-        width: 50%;
-        border-bottom: double;
-        border-radius: 10px;
-        border-color: cyan;
-        font-size: 25px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-
-    .paraQuienes p {
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 20px;
-        border-radius: 10px;
-        background-image: url("../imag/Columna4.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding: 10px;
-        color: black;
-        margin: 10px;
-    }
-
-    .gridformContenedor {
-        display: flex;
+    display: inline-block;
+    width: 85%;
+    margin: 20px;
+    padding: 10px;
+    color: #b1a9a9;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: justify;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+  }
+  .paraQuienes h3 {
+    text-align: center;
+    margin: 20px;
+    width: 50%;
+    border-bottom: double;
+    border-radius: 10px;
+    border-color: cyan;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .paraQuienes p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    border-radius: 10px;
+    background-image: url("../imag/Columna4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    color: black;
+    margin: 10px;
+  }
+  .gridformContenedor {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
         grid-template-rows: auto;
-        margin: 15px;
+    margin: 15px;
+    -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 25px;
-        font-variant: small-caps;
-        width: 90%;
-        height: 90%;
-        align-items: center;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .divFieldset {
-        display: flex;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 20px;
-        font-variant: small-caps;
-        text-align: center;
-        width: 90%;
-        height: 90%;
-        color: white;
-        justify-content: center;
-        margin: 15px;
-    }
-
-    .divPresentacion {
-        display: flex;
-        text-align: justify;
-        color: rgb(205, 13, 243);
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 30px;
-        margin-top: 30px;
-        width: 90%;
-        font-size: 25px;
-        background-image: url(../imag/fondorela.jpg);
-        background-size: cover;
-        border-radius: 25px;
-    }
-
-    .divPresentacion p {
-        font-style: italic;
-        font-variant: small-caps;
-        padding: 20px 30px 20px 30px;
-    }
-
-    .botonInput {
-        margin-bottom: 15px;
-    }
-
-    .datosUbicacion {
-        display: flex;
-        text-align: center;
-        color: white;
-        align-items: center;
-        margin: 10px;
-        font-size: 15px;
-        padding: 10px;
-        width: 90%;
-        flex-direction: column;
-    }
-
-    .iframeMapa {
-        display: flex;
-        margin-top: 60px;
-        width: 90%;
-        height: 350px;
-        margin-left: 10px;
-        align-items: center;
-        text-align: center;
-    }
-
-    .map {
-        display: flex;
-        width: 100%;
-        height: 100%;
-        border-radius: 10px;
-        flex-direction: column;
-    }
-
-    form {
-        background-color: transparent;
-        width: 90%;
-    }
-
-    .gridContenedor {
-        display: grid;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    font-variant: small-caps;
+    width: 90%;
+    height: 90%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .divFieldset {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-variant: small-caps;
+    text-align: center;
+    width: 90%;
+    height: 90%;
+    color: white;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 15px;
+  }
+  .divPresentacion {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: justify;
+    color: #cd0df3;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    width: 90%;
+    font-size: 25px;
+    background-image: url(../imag/fondorela.jpg);
+    background-size: cover;
+    border-radius: 25px;
+  }
+  .divPresentacion p {
+    font-style: italic;
+    font-variant: small-caps;
+    padding: 20px 30px 20px 30px;
+  }
+  .botonInput {
+    margin-bottom: 15px;
+  }
+  .datosUbicacion {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    color: white;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 10px;
+    font-size: 15px;
+    padding: 10px;
+    width: 90%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .iframeMapa {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 60px;
+    width: 90%;
+    height: 350px;
+    margin-left: 10px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .map {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  form {
+    background-color: transparent;
+    width: 90%;
+  }
+  .gridContenedor {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
         grid-template-rows: auto;
-        grid-row-gap: 15px;
-        margin: 10px;
-        justify-items: center;
-        align-items: center;
-    }
-
-    .divquiro {
-        font-size: 30px;
-        display: flex;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        text-align: center;
-        display: inline-block;
-        width: 80%;
-        height: 250px;
-        margin-top: 15px;
-        background-image: url(../imag/img2.jpg);
-        background-size: cover;
-        border-style: groove;
-        border-radius: 50px;
-        transition: all 1s;
-    }
-
-    .divquiro:hover {
-        width: 90%;
-    }
-
-    .divosteo {
-        font-size: 27px;
-        display: flex;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        text-align: center;
-        vertical-align: bottom;
-        display: inline-block;
-        width: 80%;
-        height: 250px;
-        margin-top: 15px;
-        background-image: url(../imag/osteopatia.jpg);
-        background-size: cover;
-        border-style: groove;
-        border-radius: 50px;
-        transition: all 1s;
-    }
-
-    .divosteo:hover {
-        width: 90%;
-    }
-
-    .divmedchina {
-        font-size: 27px;
-        display: flex;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        text-align: center;
-        display: inline-block;
-        width: 80%;
-        height: 250px;
-        margin-top: 15px;
-        background-image: url(../imag/acupuntura.jpg);
-        background-size: cover;
-        border-style: groove;
-        border-radius: 50px;
-        transition: all 1s;
-    }
-
-    .divmedchina:hover {
-        width: 90%;
-    }
-
-    .divmasaj {
-        font-size: 27px;
-        display: flex;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        display: inline-block;
-        text-align: center;
-        width: 80%;
-        height: 250px;
-        margin-top: 15px;
-        background-image: url(../imag/masa1.jpg);
-        background-size: cover;
-        border-style: groove;
-        border-radius: 50px;
-        transition: all 1s;
-    }
-
-    .divmasaj:hover {
-        width: 90%;
-    }
-
-    .divreflex {
-        font-size: 27px;
-        display: flex;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        text-align: center;
-        display: inline-block;
-        width: 80%;
-        height: 250px;
-        margin-top: 15px;
-        background-image: url(../imag/reflexo.jpg);
-        background-size: cover;
-        border-style: groove;
-        border-radius: 50px;
-        transition: all 1s;
-    }
-
-    .divreflex:hover {
-        width: 90%;
-    }
-
-    .divenfermeria {
-        font-size: 27px;
-        display: flex;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        text-align: center;
-        display: inline-block;
-        width: 80%;
-        height: 250px;
-        margin-top: 15px;
-        background-image: url(../imag/enfermeria1.jpg);
-        background-size: cover;
-        border-style: groove;
-        border-radius: 50px;
-        transition: all 1s;
-    }
-
-    .divenfermeria:hover {
-        width: 90%;
-    }
-
-    .divviscerales {
-        font-size: 27px;
-        display: flex;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        text-align: center;
-        display: inline-block;
-        width: 80%;
-        height: 250px;
-        margin-top: 15px;
-        margin-bottom: 15px;
-        background-image: url(../imag/tecviscerales.jpg);
-        background-size: cover;
-        border-style: groove;
-        border-radius: 50px;
-        transition: all 1s;
-    }
-
-    .divviscerales:hover {
-        width: 90%;
-    }
-
-    .divsacro {
-        font-size: 27px;
-        display: flex;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        text-align: center;
-        display: inline-block;
-        width: 80%;
-        height: 250px;
-        margin-top: 15px;
-        margin-bottom: 15px;
-        background-image: url(../imag/sacro.jpg);
-        background-size: cover;
-        border-style: groove;
-        border-radius: 50px;
-        transition: all 1s;
-    }
-
-    .divsacro:hover {
-        width: 90%;
-    }
-
-    .divlinfa {
-        font-size: 27px;
-        display: flex;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        text-align: center;
-        display: inline-block;
-        width: 80%;
-        height: 250px;
-        margin-top: 15px;
-        margin-bottom: 15px;
-        background-image: url(../imag/drenaje.jpg);
-        background-size: cover;
-        border-style: groove;
-        border-radius: 50px;
-        transition: all 1s;
-    }
-
-    .divlinfa:hover {
-        width: 90%;
-    }
-
-    body {
-        background-image: url(../imag/column.jpg);
-        background-size: cover;
-        background-attachment: fixed;
-
-    }
-
-    .gridnavContenedor {
-        display: grid;
+    grid-row-gap: 15px;
+    margin: 10px;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body {
+    background-image: url(../imag/column.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #330c29;
+    font-size: 25px;
+    text-shadow: 3px 2px 3px #383434;
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 15px;
+    background-image: url(../imag/sag.jpeg);
+    background-size: cover;
+    border-color: cyan;
+  }
+  nav {
+    margin-bottom: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+  }
+  header a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    color: cyan;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border-top: double;
+    border-left: double;
+    border-color: cyan;
+  }
+  header a:link {
+    text-decoration: none;
+  }
+  ul ul {
+    position: absolute;
+    display: none;
+  }
+  .gridFooter {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        grid-row-gap: 15px;
-        margin: 10px;
-        justify-content: space-around;
-        align-items: center;
-        z-index: 999;
-    }
-
-    h1 {
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        color: rgb(51, 12, 41);
-        font-size: 25px;
-        text-shadow: 3px 2px 3px rgb(56, 52, 52);
-        text-align: center;
-        margin-bottom: 15px;
-        padding: 15px;
-        background-image: url(../imag/sag.jpeg);
-        background-size: cover;
-        border-color: cyan;
-    }
-
-    ul li {
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 20px;
-        font-variant: small-caps;
-        padding: 10px;
-        margin: 10px;
-        width: auto;
-        display: inline-block;
-        border-radius: 5px;
-        text-align: left;
-        justify-content:space-between;
-        align-items: stretch;
-    }
-    nav {
-        margin-bottom: 15px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 20px;
-    }
-
-    header a {
-        display: flex;
-        justify-content:space-between;
-        align-items: center;
-        color: cyan;
-        padding: 10px;
-        margin: 10px;
-        border-radius: 10px;
-       
-        border-top: double;
-        border-color: cyan;
-
-    }
-
-    a:link {
-        text-decoration: none
-    }
-
-    ul ul {
-        position: absolute;
-        display: none;
-    }
-
-    ul ul li {
-        display: block;
-    }
-
-    ul li:hover ul {
-        display: block;
-    }*/
-
-    .gridFooter {
-        display: grid;
-        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
+    -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        border-bottom: double;
-        border-color:cyan ;
-        grid-row-gap: 15px;
-        margin: 10px;
-        width: auto;
-        color: rgb(239, 239, 243);
-        text-align: center;
-    }
-    footer {
-        color: rgb(239, 239, 243);
-        text-align: center;
-        padding: 25px;
-    }
-
-    .audio {
-        width: 55px;
-        height: 55px;
-        position: fixed;
-        display: flex;
-        left: 10px;
-        top: 560px;
-        margin-bottom: 30px;
-        margin-right: 10px;
-        z-index: 999;
-        transition: 1s;
-    }
-
-    .audio:hover {
-        transform: scale(1.4);
-    }
-
-    .wspIcon {
-        width: 55px;
-        height: 55px;
-        position: fixed;
-        display: flex;
-        right: 10px;
-        top: 440px;
-        margin-bottom: 30px;
-        margin-right: 10px;
-        z-index: 999;
-        transition: all 1s;
-    }
-
-    .wspIcon:hover {
-        transform: scale(1.4);
-    }
-
-    .iconSugerencia {
-        width: 55px;
-        height: 55px;
-        position: fixed;
-        display: flex;
-        right: 10px;
-        top: 560px;
-        margin-bottom: 30px;
-        margin-right: 10px;
-        z-index: 999;
-        transition: all 1s;
-    }
-
-    .iconSugerencia:hover {
-        transform: scale(1.4);
-    }
-
-    .iconHome {
-        width: 55px;
-        height: 55px;
-        position: fixed;
-        display: flex;
-        right: 10px;
-        top: 500px;
-        margin-bottom: 30px;
-        margin-right: 10px;
-        z-index: 999;
-        transition: all 1s;
-    }
-
-    .iconHome:hover {
-        transform: scale(1.4);
-    }
-
-    .faceIcon {
-        width: 55px;
-        height: 55px;
-        position: fixed;
-        display: flex;
-        top: 380px;
-        right: 10px;
-        z-index: 999;
-        margin-bottom: 30px;
-        margin-right: 10px;
-        transition: all 1s;
-    }
-
-    .instaIcon {
-        width: 55px;
-        height: 55px;
-        position: fixed;
-        display: flex;
-        top: 320px;
-        right: 10px;
-        z-index: 999;
-        margin-bottom: 30px;
-        margin-right: 10px;
-        transition: all 1s;
-    }
-
-    .faceIcon:hover {
-        transform: scale(1.4);
-    }
-
-    .instaIcon:hover {
-        transform: scale(1.4);
-    }
-
-    /* .imgUno {
-        background-image: url(../imag/consultorio1.jpg);
-        display: flex;
-        margin-top: 10px;
-        margin-bottom: 15px;
-        width: 90%;
-        height: 450px;
-        background-size: cover;
-        border-style: groove;
-        border-radius: 50px;
-    }
-
-    .imgDos {
-        background-image: url(../imag/consultorio2.jpg);
-        display: flex;
-        margin-top: 10px;
-        margin-bottom: 15px;
-        width: 90%;
-        height: 450px;
-        background-size: cover;
-        border-style: groove;
-        border-radius: 50px;
-    }
-
-    .imgTres {
-        background-image: url(../imag/consultorio3.jpg);
-        display: flex;
-        margin-top: 10px;
-        margin-bottom: 15px;
-        width: 90%;
-        height: 450px;
-        background-size: cover;
-        border-style: groove;
-        border-radius: 50px;
-    }
-
-    .imgCuatro {
-        background-image: url(../imag/consultorio4.jpg);
-        display: flex;
-        margin-top: 10px;
-        margin-bottom: 15px;
-        width: 90%;
-        height: 450px;
-        background-size: cover;
-        border-style: groove;
-        border-radius: 50px;
-    }
-
-    .imgCinco {
-        background-image: url(../imag/consultorio5.jpg);
-        display: flex;
-        margin-top: 10px;
-        margin-bottom: 15px;
-        width: 90%;
-        height: 450px;
-        background-size: cover;
-        border-style: groove;
-        border-radius: 50px;
-    }
-
-    .imgSeis {
-        background-image: url(../imag/consultorio6.jpg);
-        display: flex;
-        margin-top: 10px;
-        margin-bottom: 15px;
-        width: 90%;
-        height: 450px;
-        background-size: cover;
-        border-style: groove;
-        border-radius: 50px;
-    }
-
-    .imgSiete {
-        background-image: url(../imag/consultorio7.jpg);
-        display: flex;
-        margin-top: 10px;
-        margin-bottom: 15px;
-        width: 90%;
-        height: 450px;
-        background-size: cover;
-        border-style: groove;
-        border-radius: 50px;
-    }
-
-    .imgOcho {
-        background-image: url(../imag/consultorio8.jpg);
-        display: flex;
-        margin-top: 10px;
-        margin-bottom: 15px;
-        width: 90%;
-        height: 450px;
-        background-size: cover;
-        border-style: groove;
-        border-radius: 50px;
-    }
-    .imgNueve{
-        background-image: url(../imag/consultorio9.jpg);
-        display: flex;
-        margin-top: 10px;
-        margin-bottom: 15px;
-        width: 90%;
-        height: 450px;
-        background-size: cover;
-        border-style: groove;
-        border-radius: 50px;
-    }
-    .imgDiez {
-        background-image: url(../imag/consultorio10.jpg);
-        display: flex;
-        margin-top: 10px;
-        margin-bottom: 15px;
-        width: 90%;
-        height: 450px;
-        background-size: cover;
-        border-style: groove;
-        border-radius: 50px;
-    }
-    .imgOnce{
-        background-image: url(../imag/consultorio11.jpg);
-        display: flex;
-        margin-top: 10px;
-        margin-bottom: 15px;
-        width: 90%;
-        height: 450px;
-        background-size: cover;
-        border-style: groove;
-        border-radius: 50px;
-    }
-    .imgDoce{
-        background-image: url(../imag/consultorio12.jpg);
-        display: flex;
-        margin-top: 10px;
-        margin-bottom: 15px;
-        width: 90%;
-        height: 450px;
-        background-size: cover;
-        border-style: groove;
-        border-radius: 50px;
-    }
-    .imgTrece{
-        background-image: url(../imag/consultorio13.jpg);
-        display: flex;
-        margin-top: 10px;
-        margin-bottom: 15px;
-        width: 90%;
-        height: 450px;
-        background-size: cover;
-        border-style: groove;
-        border-radius: 50px;
-    }
-    .imgCatorce{
-        background-image: url(../imag/consultorio14.jpg);
-        display: flex;
-        margin-top: 10px;
-        margin-bottom: 15px;
-        width: 90%;
-        height: 450px;
-        background-size: cover;
-        border-style: groove;
-        border-radius: 50px;
-    }
-    .imgQuince{
-        background-image: url(../imag/consultorio15.jpg);
-        display: flex;
-        margin-top: 10px;
-        margin-bottom: 15px;
-        width: 90%;
-        height: 450px;
-        background-size: cover;
-        border-style: groove;
-        border-radius: 50px;
-    }
-    .imgDieciseis{
-        background-image: url(../imag/consultorio16.jpg);
-        display: flex;
-        margin-top: 10px;
-        margin-bottom: 15px;
-        width: 90%;
-        height: 450px;;
-        background-size: cover;
-        border-style: groove;
-        border-radius: 50px;
-    }
-    .imgDiecisiete{
-        background-image: url(../imag/consultorio17.jpg);
-        display: flex;
-        margin-top: 10px;
-        margin-bottom: 15px;
-        width: 90%;
-        height: 450px;
-        background-size: cover;
-        border-style: groove;
-        border-radius: 50px;
-    }
-    .imgDieciocho{
-        background-image: url(../imag/consultorio18.jpg);
-        display: flex;
-        margin-top: 10px;
-        margin-bottom: 15px;
-        width: 90%;
-        height: 450px;
-        background-size: cover;
-        border-style: groove;
-        border-radius: 50px;
-    }
-    .imgDiecinueve{
-        background-image: url(../imag/consultorio19.jpg);
-        display: flex;
-        margin-top: 10px;
-        margin-bottom: 15px;
-        width: 90%;
-        height: 450px;
-        background-size: cover;
-        border-style: groove;
-        border-radius: 50px;
-    }
-    .imgVeinte{
-        display: flex;
-        margin-top: 10px;
-        margin-bottom: 15px;
-        width: 90%;
-        height: 450px;
-        background-size: cover;
-        border-style: groove;
-        border-radius: 50px;
-        justify-content: center;
-        align-items: center;
-    }
-    .borderVideo{
-        border-radius: 50px;
-        width: 90%; 
-        height: 95%;
-    }
-    
-
-    .gridMultimedia {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        grid-row-gap: 5px;
-        grid-column-gap: 5px;
-        margin: 10px;
-        justify-items: center;
-        align-items: center;
-    }*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-bottom: double;
+    border-color: cyan;
+    grid-row-gap: 15px;
+    margin: 10px;
+    width: auto;
+    color: #efeff3;
+    text-align: center;
+  }
+  footer {
+    color: #efeff3;
+    text-align: center;
+    padding: 25px;
+  }
+  .audio {
+    width: 55px;
+    height: 55px;
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    left: 10px;
+    top: 560px;
+    margin-bottom: 30px;
+    margin-right: 10px;
+    z-index: 999;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .audio:hover {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  .wspIcon {
+    width: 55px;
+    height: 55px;
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    right: 10px;
+    top: 440px;
+    margin-bottom: 30px;
+    margin-right: 10px;
+    z-index: 999;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  .wspIcon:hover {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  .iconSugerencia {
+    width: 55px;
+    height: 55px;
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    right: 10px;
+    top: 560px;
+    margin-bottom: 30px;
+    margin-right: 10px;
+    z-index: 999;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  .iconSugerencia:hover {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  .iconHome {
+    width: 55px;
+    height: 55px;
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    right: 10px;
+    top: 500px;
+    margin-bottom: 30px;
+    margin-right: 10px;
+    z-index: 999;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  .iconHome:hover {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  .faceIcon {
+    width: 55px;
+    height: 55px;
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    top: 380px;
+    right: 10px;
+    z-index: 999;
+    margin-bottom: 30px;
+    margin-right: 10px;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  .faceIcon:hover {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  .instaIcon {
+    width: 55px;
+    height: 55px;
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    top: 320px;
+    right: 10px;
+    z-index: 999;
+    margin-bottom: 30px;
+    margin-right: 10px;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  .instaIcon:hover {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
 }
 
 @media screen and (min-width: 750px) {
-    * {
-        margin: 0;
-        padding: 0;
-    }
-
-    h3 {
-        color: darkcyan;
-        font-variant: small-caps;
-    }
-
-    .serviciosGenerales {
-        width: 90%;
-        color: black;
-        margin: 30px;
-        display: flex;
-        flex-direction: column;
-        background-image: url(../imag/fondo-vertebral.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-
-    .serviciosGenerales p {
-        margin-left: 15%;
-        margin-right: 10%;
-        padding: 15px;
-        font-style: italic;
-        text-align: justify;
-        color: black;
-        width: 70%;
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  h3 {
+    color: darkcyan;
+    font-variant: small-caps;
+  }
+  .serviciosGenerales {
+    width: 90%;
+    color: black;
+    margin: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-image: url(../imag/fondo-vertebral.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .serviciosGenerales p {
+    margin-left: 15%;
+    margin-right: 10%;
+    padding: 15px;
+    font-style: italic;
+    text-align: justify;
+    color: black;
+    width: 70%;
+    -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 18px;
-
-    }
-
-    .serviciosGenerales h3 {
-        margin-top: 20px;
-        margin-left: 10%;
-        width: 15%;
-    }
-
-    .paraQuienes {
-        display: flex;
-        width: 95%;
-        color: white;
-        margin: 20px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .gridformContenedor {
-        display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+  }
+  .serviciosGenerales h3 {
+    margin-top: 20px;
+    margin-left: 10%;
+    width: 15%;
+  }
+  .paraQuienes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 95%;
+    color: white;
+    margin: 20px;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .gridformContenedor {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        margin: 25px;
+    margin: 25px;
+    -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 20px;
-        font-variant: small-caps;
-        text-align: center;
-        width: 90%;
-        height: 90%;
-        align-items: center;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .divFieldset {
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 20px;
-        font-variant: small-caps;
-        text-align: center;
-        margin-left: 20px;
-        width: 45%;
-        height: 45%;
-        color: white;
-    }
-
-
-    .divPresentacion {
-        display: flex;
-        text-align: justify;
-        color: rgb(205, 13, 243);
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 30px;
-        width: 40%;
-        margin-left: 20px;
-        margin-right: 20px;
-        font-size: 35px;
-        background-image: url(../imag/fondorela.jpg);
-        background-size: cover;
-    }
-
-    .divPresentacion p {
-        padding: 30px 40px 30px 40px;
-        font-style: italic;
-        font-variant: small-caps;
-
-    }
-
-    .botonInput {
-        margin-bottom: 15px;
-    }
-
-    .datosUbicacion {
-        display: flex;
-        text-align: center;
-        color: white;
-        align-items: center;
-        margin: 20px;
-        padding: 10px;
-        width: 40%;
-        flex-direction: column;
-    }
-
-    .iframeMapa {
-        display: flex;
-        width: 45%;
-        margin: 25px;
-        align-items: center;
-        text-align: center;
-    }
-
-    .map {
-        display: flex;
-        width: 450px;
-        height: 400px;
-        border-radius: 10px;
-    }
-
-    form {
-        width: 500px;
-        background-color: transparent;
-        padding: 15px;
-    }
-
-    .contenedorMapas {
-        display: flex;
-        margin: 15px;
-        padding: 15px;
-    }
-
-    /*.gridContenedor {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-row-gap: 15px;
-        margin: 10px;
-        justify-items: center;
-        align-items: center;
-    }
-
-    .divquiro {
-        font-size: 30px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        text-align: center;
-        display: inline-block;
-        width: 330px;
-        height: 330px;
-        margin-top: 15px;
-        background-image: url(../imag/img2.jpg);
-        background-size: cover;
-        border-style: groove;
-        border-radius: 50px;
-        transition: all 1s;
-    }
-
-    .divquiro:hover {
-        width: 400px;
-    }
-
-    .divosteo {
-        font-size: 27px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        text-align: center;
-        vertical-align: bottom;
-        display: inline-block;
-        width: 330px;
-        height: 330px;
-        margin-top: 15px;
-        background-image: url(../imag/osteopatia.jpg);
-        background-size: cover;
-        border-style: groove;
-        border-radius: 50px;
-        transition: all 1s;
-    }
-
-    .divosteo:hover {
-        width: 400px;
-    }
-
-    .divmedchina {
-        font-size: 27px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        text-align: center;
-        display: inline-block;
-        width: 330px;
-        height: 330px;
-        margin-top: 15px;
-        background-image: url(../imag/acupuntura.jpg);
-        background-size: cover;
-        border-style: groove;
-        border-radius: 50px;
-        transition: all 1s;
-    }
-
-    .divmedchina:hover {
-        width: 400px;
-    }
-
-    .divmasaj {
-        font-size: 27px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        display: inline-block;
-        text-align: center;
-        width: 330px;
-        height: 330px;
-        margin-top: 15px;
-        background-image: url(../imag/masa1.jpg);
-        background-size: cover;
-        border-style: groove;
-        border-radius: 50px;
-        transition: all 1s;
-    }
-
-    .divmasaj:hover {
-        width: 400px;
-    }
-
-    .divreflex {
-        font-size: 27px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        text-align: center;
-        display: inline-block;
-        width: 330px;
-        height: 330px;
-        margin-top: 15px;
-        background-image: url(../imag/reflexo.jpg);
-        background-size: cover;
-        border-style: groove;
-        border-radius: 50px;
-        transition: all 1s;
-    }
-
-    .divreflex:hover {
-        width: 400px;
-    }
-
-    .divenfermeria {
-        font-size: 27px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        text-align: center;
-        display: inline-block;
-        width: 330px;
-        height: 330px;
-        margin-top: 15px;
-        background-image: url(../imag/enfermeria1.jpg);
-        background-size: cover;
-        border-style: groove;
-        border-radius: 50px;
-        transition: all 1s;
-    }
-
-    .divenfermeria:hover {
-        width: 400px;
-    }
-
-    .divviscerales {
-        font-size: 27px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        text-align: center;
-        display: inline-block;
-        width: 330px;
-        height: 330px;
-        margin-top: 15px;
-        background-image: url(../imag/tecviscerales.jpg);
-        background-size: cover;
-        border-style: groove;
-        border-radius: 50px;
-        transition: all 1s;
-    }
-
-    .divviscerales:hover {
-        width: 400px;
-    }
-
-    .divsacro {
-        font-size: 27px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        text-align: center;
-        display: inline-block;
-        width: 330px;
-        height: 330px;
-        margin-top: 15px;
-        background-image: url(../imag/sacro.jpg);
-        background-size: cover;
-        border-style: groove;
-        border-radius: 50px;
-        transition: all 1s;
-    }
-
-    .divsacro:hover {
-        width: 400px;
-    }
-
-    .divlinfa {
-        font-size: 27px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        text-align: center;
-        width: 330px;
-        height: 330px;
-        margin-top: 15px;
-        background-image: url(../imag/drenaje.jpg);
-        background-size: cover;
-        border-style: groove;
-        border-radius: 50px;
-        transition: all 1s;
-    }
-
-    .divlinfa:hover {
-        width: 400px;
-    }*/
-
-    body {
-        background-image: url("../imag/column.jpg");
-        background-size: cover;
-        background-attachment: fixed;
-    }
-
-    .gridnavContenedor {
-        display: grid;
-        grid-template-columns: 30% auto;
-        grid-template-rows: 180px;
-        grid-row-gap: 15px;
-        margin: 10px;
-        justify-items: center;
-        align-items: center;
-    }
-
-    h1 {
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        color: rgb(59, 243, 243);
-        font-size: 30px;
-        text-shadow: 3px 2px 3px rgb(56, 52, 52);
-        text-align: left;
-        margin-bottom: 15px;
-        margin-top: 15px;
-        padding: 15px;
-        background-image: url(../imag/sag.jpeg);
-        background-size: cover;
-    }
-
-    ul li {
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 20px;
-        font-variant: small-caps;
-        padding: 10px;
-        margin: 10px;
-        width: auto;
-        display: flex;
-        display: inline-block;
-        border-radius: 5px;
-        text-align: left;
-    }
-
-    header a {
-
-        border-style: double;
-        border-top: cyan;
-        border-left: cyan;
-        padding: 10px;
-        margin: 1px;
-        border-radius: 10px;
-        background-color: #776e6e;
-    }
-
-    nav {
-        margin-bottom: 15px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 22px;
-    }
-
-    a:link {
-        text-decoration: none
-    }
-
-    ul ul {
-        position: absolute;
-        display: none;
-    }
-
-    ul ul li {
-        display: block;
-    }
-
-    ul li:hover ul {
-        display: block;
-    }
-
-    .gridFooter {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        justify-items: center;
-        align-items: center;
-        grid-row-gap: 15px;
-        margin: 10px;
-        width: auto;
-        color: rgb(255, 255, 255);
-    }
-
-    .footer a {
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        color: aquamarine;
-    }
-
-    footer {
-        color: rgb(255, 255, 255);
-    }
-
-    .audio {
-        width: 100px;
-        height: 55px;
-        position: fixed;
-        display: flex;
-        right: 10px;
-        top: 600px;
-        margin-bottom: 30px;
-        margin-right: 10px;
-        z-index: 999;
-        transition: 1s;
-    }
-
-    .audio:hover {
-        transform: scale(1.5);
-    }
-
-    .wspIcon {
-        width: 55px;
-        height: 55px;
-        position: fixed;
-        display: flex;
-        right: 10px;
-        top: 135px;
-        margin-bottom: 30px;
-        margin-right: 10px;
-        z-index: 999;
-        transition: all 1s;
-    }
-
-    .wspIcon:hover {
-        width: 70px;
-        height: 70px;
-        transform: scale(1.3);
-    }
-
-    .faceIcon {
-        width: 55px;
-        height: 55px;
-        position: fixed;
-        display: flex;
-        top: 75px;
-        right: 10px;
-        z-index: 999;
-        margin-bottom: 30px;
-        margin-right: 10px;
-        transition: all 1s;
-    }
-
-    .faceIcon:hover {
-        width: 70px;
-        height: 70px;
-        transform: scale(1.3);
-    }
-
-    .instaIcon {
-        width: 55px;
-        height: 55px;
-        position: fixed;
-        display: flex;
-        top: 195px;
-        right: 10px;
-        z-index: 999;
-        margin-bottom: 30px;
-        margin-right: 10px;
-        transition: all 1s;
-    }
-
-    .instaIcon:hover {
-        width: 70px;
-        height: 70px;
-        transform: scale(1.3);
-    }
-
-    .iconHome {
-        width: 55px;
-        height: 55px;
-        position: fixed;
-        display: flex;
-        top: 255px;
-        right: 10px;
-        z-index: 999;
-        margin-bottom: 30px;
-        margin-right: 10px;
-        transition: all 1s;
-    }
-
-    .iconHome:hover {
-        width: 70px;
-        height: 70px;
-        transform: scale(1.3);
-    }
-
-    .iconSugerencia {
-        width: 55px;
-        height: 55px;
-        position: fixed;
-        display: flex;
-        top: 315px;
-        right: 10px;
-        z-index: 999;
-        margin-bottom: 30px;
-        margin-right: 10px;
-        transition: all 1s;
-    }
-
-    .iconSugerencia:hover {
-        width: 70px;
-        height: 70px;
-        transform: scale(1.3);
-    }
-
-    /*    .imgUno {
-        background-image: url(../imag/consultorio1.jpg);
-        display: flex;
-        padding: 15px;
-        margin: 15px;
-        width: 450px;
-        height: 450px;
-        transition: all 1s;
-        background-size: cover;
-        border-style: groove;
-        border-radius: 10px;
-    }
-    .imgUno:hover{
-        height: 500px;
-    }
-
-    .imgDos {
-        background-image: url(../imag/consultorio2.jpg);
-        display: flex;
-        padding: 15px;
-        margin: 15px;
-        width: 450px;
-        height: 450px;
-        transition: all 1s; 
-        background-size: cover;
-        border-style: groove;
-        border-radius: 10px;
-    }
-    .imgDos:hover{
-        height: 500px;
-    }
-
-    .imgTres {
-        background-image: url(../imag/consultorio3.jpg);
-        display: flex;
-        padding: 15px;
-        margin: 15px;
-        width: 450px;
-        height: 450px;
-        transition: all 1s;
-        background-size: cover;
-        border-style: groove;
-        border-radius: 10px;
-    }
-    .imgTres:hover{
-        height: 500px;
-    }
-
-    .imgCuatro {
-        background-image: url(../imag/consultorio4.jpg);
-        display: flex;
-        padding: 15px;
-        margin: 15px;
-        width: 450px;
-        height: 450px;
-        transition: all 1s;
-        background-size: cover;
-        border-style: groove;
-        border-radius: 10px;
-    }
-    .imgCuatro:hover{
-        width: 500px;
-    }
-
-    .imgCinco {
-        background-image: url(../imag/consultorio5.jpg);
-        display: flex;
-        padding: 15px;
-        margin: 15px;
-        width: 450px;
-        height: 450px;
-        transition: all 1s;
-        background-size: cover;
-        border-style: groove;
-        border-radius: 10px;
-    }
-    .imgCinco:hover{
-        width: 500px;
-    }
-
-    .imgSeis {
-        background-image: url(../imag/consultorio6.jpg);
-        display: flex;
-        padding: 15px;
-        margin: 15px;
-        width: 450px;
-        height: 450px;
-        transition: all 1s;
-        background-size: cover;
-        border-style: groove;
-        border-radius: 10px;
-    }
-    .imgSeis:hover{
-        height: 500px;
-    }
-
-    .imgSiete {
-        background-image: url(../imag/consultorio7.jpg);
-        display: flex;
-        padding: 15px;
-        margin: 15px;
-        width: 450px;
-        height: 450px;
-        transition: all 1s;
-        background-size: cover;
-        border-style: groove;
-        border-radius: 10px;
-    }
-    .imgSiete:hover{
-        height: 500px;
-    }
-
-    .imgOcho {
-        background-image: url(../imag/consultorio8.jpg);
-        display: flex;
-        padding: 15px;
-        margin: 15px;
-        width: 450px;
-        height: 450px;
-        transition: all 1s;
-        background-size: cover;
-        border-style: groove;
-        border-radius: 10px;
-    }
-    .imgOcho:hover{
-        height: 500px;
-    }
-    .imgNueve{
-        background-image: url(../imag/consultorio9.jpg);
-        display: flex;
-        padding: 15px;
-        margin: 15px;
-        width: 450px;
-        height: 450px;
-        transition: all 1s;
-        background-size: cover;
-        border-style: groove;
-        border-radius: 10px;
-    }
-    .imgNueve:hover{
-        width: 500px;
-    }
-    .imgDiez {
-        background-image: url(../imag/consultorio10.jpg);
-        display: flex;
-        padding: 15px;
-        margin: 15px;
-        width: 450px;
-        height: 450px;
-        transition: all 1s;
-        background-size: cover;
-        border-style: groove;
-        border-radius: 10px;
-    }
-    .imgDiez:hover{
-        width: 500px;
-    }
-    .imgOnce{
-        background-image: url(../imag/consultorio11.jpg);
-        display: flex;
-        padding: 15px;
-        margin: 15px;
-        width: 450px;
-        height: 450px;
-        transition: all 1s;
-        background-size: cover;
-        border-style: groove;
-        border-radius: 10px;
-    }
-    .imgOnce:hover{
-        width: 500px;
-    }
-    .imgDoce{
-        background-image: url(../imag/consultorio12.jpg);
-        display: flex;
-        padding: 15px;
-        margin: 15px;
-        width: 450px;
-        height: 450px;
-        transition: all 1s;
-        background-size: cover;
-        border-style: groove;
-        border-radius: 10px;
-    }
-    .imgDoce:hover{
-        width: 500px;
-    }
-    .imgTrece{
-        background-image: url(../imag/consultorio13.jpg);
-        display: flex;
-        padding: 15px;
-        margin: 15px;
-        width: 450px;
-        height: 450px;
-        transition: all 1s;
-        background-size: cover;
-        border-style: groove;
-        border-radius: 10px;
-    }
-    .imgTrece:hover{
-        width: 500px;
-    }
-    .imgCatorce{
-        background-image: url(../imag/consultorio14.jpg);
-        display: flex;
-        padding: 15px;
-        margin: 15px;
-        width: 450px;
-        height: 450px;
-        transition: all 1s;
-        background-size: cover;
-        border-style: groove;
-        border-radius: 10px;
-    }
-    .imgCatorce:hover{
-        width: 500px;
-    }
-    .imgQuince{
-        background-image: url(../imag/consultorio15.jpg);
-        display: flex;
-        padding: 15px;
-        margin: 15px;
-        width: 450px;
-        height: 450px;
-        transition: all 1s;
-        background-size: cover;
-        border-style: groove;
-        border-radius: 10px;
-    }
-    .imgQuince:hover{
-        width: 500px;
-    }
-    .imgDieciseis{
-        background-image: url(../imag/consultorio16.jpg);
-        display: flex;
-        padding: 15px;
-        margin: 15px;
-        width: 450px;
-        height: 450px;
-        transition: all 1s;
-        background-size: cover;
-        border-style: groove;
-        border-radius: 10px;
-    }
-    .imgDieciseis:hover{
-        width: 500px;
-    }
-    .imgDiecisiete{
-        background-image: url(../imag/consultorio17.jpg);
-        display: flex;
-        padding: 15px;
-        margin: 15px;
-        width: 450px;
-        height: 450px;
-        transition: all 1s;
-        background-size: cover;
-        border-style: groove;
-        border-radius: 10px;
-    }
-    .imgDiecisiete:hover{
-        height: 500px;
-    }
-    .imgDieciocho{
-        background-image: url(../imag/consultorio18.jpg);
-        display: flex;
-        padding: 15px;
-        margin: 15px;
-        width: 450px;
-        height: 450px;
-        transition: all 1s;
-        background-size: cover;
-        border-style: groove;
-        border-radius: 10px;
-    }
-    .imgDieciocho:hover{
-        height: 500px;
-    }
-    .imgDiecinueve{
-        background-image: url(../imag/consultorio19.jpg);
-        display: flex;
-        padding: 15px;
-        margin: 15px;
-        width: 450px;
-        height: 450px;
-        transition: all 1s;
-        background-size: cover;
-        border-style: groove;
-        border-radius: 10px;
-    }
-    .imgDiecinueve:hover{
-        width: 500px;
-    }
-    .imgVeinte{
-        display: flex;
-        padding: 15px;
-        margin: 15px;
-        width: 450px;
-        height: 450px;
-        transition: all 1s;
-        background-size: cover;
-        border-style: groove;
-        border-radius: 10px;
-    }*/
-
-    /*
-    .gridMultimedia {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-row-gap: 10px;
-        grid-column-gap: 10px;
-        margin: 10px;
-        border-style: double;
-        border-color: rgb(194, 25, 152);
-        border-radius: 10px;
-        justify-items: center;
-        align-items: center;
-    }*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-variant: small-caps;
+    text-align: center;
+    width: 90%;
+    height: 90%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .divFieldset {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-variant: small-caps;
+    text-align: center;
+    margin-left: 20px;
+    width: 45%;
+    height: 45%;
+    color: white;
+  }
+  .divPresentacion {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: justify;
+    color: #cd0df3;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px;
+    width: 40%;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 35px;
+    background-image: url(../imag/fondorela.jpg);
+    background-size: cover;
+  }
+  .divPresentacion p {
+    padding: 30px 40px 30px 40px;
+    font-style: italic;
+    font-variant: small-caps;
+  }
+  .botonInput {
+    margin-bottom: 15px;
+  }
+  .datosUbicacion {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    color: white;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 20px;
+    padding: 10px;
+    width: 40%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .iframeMapa {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 45%;
+    margin: 25px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .map {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 450px;
+    height: 400px;
+    border-radius: 10px;
+  }
+  form {
+    width: 500px;
+    background-color: transparent;
+    padding: 15px;
+  }
+  .contenedorMapas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 15px;
+    padding: 15px;
+  }
+  body {
+    background-image: url("../imag/column.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #3bf3f3;
+    font-size: 30px;
+    text-shadow: 3px 2px 3px #383434;
+    text-align: left;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding: 15px;
+    background-image: url(../imag/sag.jpeg);
+    background-size: cover;
+  }
+  ul li {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-variant: small-caps;
+    padding: 10px;
+    margin: 10px;
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: inline-block;
+    border-radius: 5px;
+    text-align: left;
+  }
+  header a {
+    border-style: double;
+    border-top: cyan;
+    border-left: cyan;
+    padding: 10px;
+    margin: 1px;
+    border-radius: 10px;
+  }
+  nav {
+    margin-bottom: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+  }
+  a:link {
+    text-decoration: none;
+  }
+  footer {
+    color: white;
+  }
+  .audio {
+    width: 100px;
+    height: 55px;
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    right: 10px;
+    top: 600px;
+    margin-bottom: 30px;
+    margin-right: 10px;
+    z-index: 999;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .audio:hover {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  .wspIcon {
+    width: 55px;
+    height: 55px;
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    right: 10px;
+    top: 135px;
+    margin-bottom: 30px;
+    margin-right: 10px;
+    z-index: 999;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  .wspIcon:hover {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  .faceIcon {
+    width: 55px;
+    height: 55px;
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    top: 75px;
+    right: 10px;
+    z-index: 999;
+    margin-bottom: 30px;
+    margin-right: 10px;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  .faceIcon:hover {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  .instaIcon {
+    width: 55px;
+    height: 55px;
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    top: 195px;
+    right: 10px;
+    z-index: 999;
+    margin-bottom: 30px;
+    margin-right: 10px;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  .instaIcon:hover {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  .iconHome {
+    width: 55px;
+    height: 55px;
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    top: 255px;
+    right: 10px;
+    z-index: 999;
+    margin-bottom: 30px;
+    margin-right: 10px;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  .iconHome:hover {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  .iconSugerencia {
+    width: 55px;
+    height: 55px;
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    top: 315px;
+    right: 10px;
+    z-index: 999;
+    margin-bottom: 30px;
+    margin-right: 10px;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  .iconSugerencia:hover {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
 }
+/*# sourceMappingURL=style.css.map */
