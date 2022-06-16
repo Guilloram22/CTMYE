@@ -8,6 +8,7 @@
     margin: 0;
     padding: 0;
   }
+
   .serviciosGenerales {
     width: 90%;
     color: black;
@@ -424,6 +425,7 @@
     color: darkcyan;
     font-variant: small-caps;
   }
+
   .serviciosGenerales {
     width: 90%;
     color: black;
