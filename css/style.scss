@@ -1,8 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
+@import "estructura";
 
 
 @media screen and (min-width: 350px) {
@@ -10,12 +6,6 @@
         margin: 0;
         padding: 0;
     }
-    .carousel-inner{
-        width: 60%;
-        display: contents;
-        justify-content: center;
-        align-items: center;
-      }
 
     .serviciosGenerales {
         width: 90%;
@@ -30,6 +20,7 @@
         background-repeat: no-repeat;
         justify-content: center;
         text-align: center;
+
         p {
             display: flex;
             margin-left: 15%;
@@ -41,12 +32,13 @@
             width: 70%;
             flex-wrap: wrap;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-size: 18px;  
+            font-size: 18px;
         }
+
         h3 {
             margin-top: 20px;
             margin-left: 10%;
-            width: 15%; 
+            width: 15%;
         }
     }
 
@@ -64,6 +56,7 @@
         text-align: justify;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 18px;
+
         h3 {
             text-align: center;
             margin: 20px;
@@ -74,6 +67,7 @@
             font-size: 25px;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
+
         p {
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-size: 20px;
@@ -129,6 +123,7 @@
         background-image: url(../imag/fondorela.jpg);
         background-size: cover;
         border-radius: 25px;
+
         p {
             font-style: italic;
             font-variant: small-caps;
@@ -185,7 +180,6 @@
         align-items: center;
     }
 
-    
 
     body {
         background-image: url(../imag/column.jpg);
@@ -195,8 +189,8 @@
     }
 
     h1 {
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        color: rgb(51, 12, 41);
+        font-family: $h1-font;
+        color: $color-font;
         font-size: 25px;
         text-shadow: 3px 2px 3px rgb(56, 52, 52);
         text-align: center;
@@ -214,9 +208,9 @@
         font-size: 20px;
     }
 
-    header a{
+    header a {
         display: flex;
-        justify-content:flex-start;
+        justify-content: flex-start;
         align-items: center;
         text-align: center;
         color: cyan;
@@ -226,6 +220,7 @@
         border-top: double;
         border-left: double;
         border-color: cyan;
+
         &:link {
             text-decoration: none
         }
@@ -244,13 +239,14 @@
         flex-wrap: wrap;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         border-bottom: double;
-        border-color:cyan ;
+        border-color: cyan;
         grid-row-gap: 15px;
         margin: 10px;
         width: auto;
         color: rgb(239, 239, 243);
         text-align: center;
     }
+
     footer {
         color: rgb(239, 239, 243);
         text-align: center;
@@ -268,7 +264,8 @@
         margin-right: 10px;
         z-index: 999;
         transition: 1s;
-        &:hover {   
+
+        &:hover {
             transform: scale(1.4);
         }
     }
@@ -279,11 +276,12 @@
         position: fixed;
         display: flex;
         right: 10px;
-        top: 440px;
+        top: 265px;
         margin-bottom: 30px;
         margin-right: 10px;
         z-index: 999;
         transition: all 1s;
+
         &:hover {
             transform: scale(1.4);
         }
@@ -300,6 +298,7 @@
         margin-right: 10px;
         z-index: 999;
         transition: all 1s;
+
         &:hover {
             transform: scale(1.4);
         }
@@ -316,6 +315,7 @@
         margin-right: 10px;
         z-index: 999;
         transition: all 1s;
+
         &:hover {
             transform: scale(1.4);
         }
@@ -326,12 +326,13 @@
         height: 55px;
         position: fixed;
         display: flex;
-        top: 380px;
+        top: 210px;
         right: 10px;
         z-index: 999;
         margin-bottom: 30px;
         margin-right: 10px;
         transition: all 1s;
+
         &:hover {
             transform: scale(1.4);
         }
@@ -348,6 +349,7 @@
         margin-bottom: 30px;
         margin-right: 10px;
         transition: all 1s;
+
         &:hover {
             transform: scale(1.4);
         }
@@ -360,12 +362,7 @@
         margin: 0;
         padding: 0;
     }
-    .carousel-inner{
-        width: 70%;
-        display: contents;
-        justify-content: center;
-        align-items: center;
-      }
+
     h3 {
         color: darkcyan;
         font-variant: small-caps;
@@ -380,6 +377,7 @@
         background-image: url(../imag/fondo-vertebral.jpg);
         background-size: cover;
         background-repeat: no-repeat;
+
         p {
             margin-left: 15%;
             margin-right: 10%;
@@ -392,10 +390,11 @@
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-size: 18px;
         }
+
         h3 {
             margin-top: 20px;
-        margin-left: 10%;
-        width: 15%;
+            margin-left: 10%;
+            width: 15%;
         }
     }
 
@@ -450,10 +449,11 @@
         font-size: 35px;
         background-image: url(../imag/fondorela.jpg);
         background-size: cover;
+
         p {
             padding: 30px 40px 30px 40px;
-        font-style: italic;
-        font-variant: small-caps;
+            font-style: italic;
+            font-variant: small-caps;
         }
     }
 
@@ -506,7 +506,7 @@
         background-attachment: fixed;
     }
 
-     h1 {
+    h1 {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         color: rgb(59, 243, 243);
         font-size: 30px;
@@ -519,26 +519,30 @@
         background-size: cover;
     }
 
-    ul li {
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 20px;
-        font-variant: small-caps;
-        padding: 10px;
-        margin: 10px;
-        width: auto;
-        display: flex;
-        display: inline-block;
-        border-radius: 5px;
-        text-align: left;
+    ul {
+        li {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+            font-variant: small-caps;
+            padding: 10px;
+            margin: 10px;
+            width: auto;
+            display: flex;
+            display: inline-block;
+            border-radius: 5px;
+            text-align: left;
+        }
     }
 
-    header a {
-        border-style: double;
-        border-top: cyan;
-        border-left: cyan;
-        padding: 10px;
-        margin: 1px;
-        border-radius: 10px;
+    header {
+        a {
+            border-style: double;
+            border-top: cyan;
+            border-left: cyan;
+            padding: 10px;
+            margin: 1px;
+            border-radius: 10px;
+        }
     }
 
     nav {
@@ -552,7 +556,7 @@
     }
 
     footer {
-        color: rgb(255, 255, 255);   
+        color: rgb(255, 255, 255);
     }
 
     .audio {
@@ -566,6 +570,7 @@
         margin-right: 10px;
         z-index: 999;
         transition: 1s;
+
         &:hover {
             transform: scale(1.5);
         }
@@ -582,6 +587,7 @@
         margin-right: 10px;
         z-index: 999;
         transition: all 1s;
+
         &:hover {
             transform: scale(1.5);
         }
@@ -598,6 +604,7 @@
         margin-bottom: 30px;
         margin-right: 10px;
         transition: all 1s;
+
         &:hover {
             transform: scale(1.5);
         }
@@ -614,6 +621,7 @@
         margin-bottom: 30px;
         margin-right: 10px;
         transition: all 1s;
+
         &:hover {
             transform: scale(1.5);
         }
@@ -630,6 +638,7 @@
         margin-bottom: 30px;
         margin-right: 10px;
         transition: all 1s;
+
         &:hover {
             transform: scale(1.5);
         }
@@ -646,6 +655,7 @@
         margin-bottom: 30px;
         margin-right: 10px;
         transition: all 1s;
+
         &:hover {
             transform: scale(1.5);
         }
