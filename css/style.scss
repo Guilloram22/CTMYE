@@ -1,4 +1,5 @@
-@import "estructura";
+@import "fuente";
+@import "colores";
 
 
 @media screen and (min-width: 350px) {
@@ -6,20 +7,16 @@
         margin: 0;
         padding: 0;
     }
-
+ 
     .serviciosGenerales {
         width: 90%;
-        color: black;
+        color: greenyellow;
         margin-left: 25px;
         display: flex;
         display: inline-block;
         flex-direction: column;
         border-radius: 10px;
-        background-image: url(../imag/fondo-vertebral.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
         justify-content: center;
-        text-align: center;
 
         p {
             display: flex;
@@ -31,14 +28,23 @@
             color: black;
             width: 70%;
             flex-wrap: wrap;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-family:$h1-font;
             font-size: 18px;
+            background-image: url(../imag/fondo-vertebral.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 10px;
         }
 
         h3 {
             margin-top: 20px;
             margin-left: 10%;
-            width: 15%;
+            margin-bottom: 20px;
+            width: 40%;
+            color: $color-h3;
+            border-bottom: double;
+            border-radius: 10px;
+            border-color: cyan;
         }
     }
 
@@ -54,7 +60,7 @@
         justify-content: center;
         align-items: center;
         text-align: justify;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family:$h1-font;
         font-size: 18px;
 
         h3 {
@@ -65,14 +71,15 @@
             border-radius: 10px;
             border-color: cyan;
             font-size: 25px;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-family:$h1-font;
+            color:$color-h3;
         }
 
         p {
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-family:$h1-font;
             font-size: 20px;
             border-radius: 10px;
-            background-image: url("../imag/Columna4.jpg");
+            background-image: url(../imag/fondo-vertebral.jpg);
             background-repeat: no-repeat;
             background-size: cover;
             padding: 10px;
@@ -87,7 +94,7 @@
         grid-template-rows: auto;
         margin: 15px;
         flex-wrap: wrap;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family:$h1-font;
         font-size: 25px;
         font-variant: small-caps;
         width: 90%;
@@ -99,7 +106,7 @@
 
     .divFieldset {
         display: flex;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family:$h1-font;
         font-size: 20px;
         font-variant: small-caps;
         text-align: center;
@@ -108,19 +115,21 @@
         color: white;
         justify-content: center;
         margin: 15px;
+        background-image: url(../imag/brillante-fondo.jpg);
+        border-radius: 25px;
     }
 
     .divPresentacion {
         display: flex;
         text-align: justify;
-        color: rgb(205, 13, 243);
+        color: cyan;
         align-items: center;
         justify-content: center;
         margin-bottom: 30px;
         margin-top: 30px;
         width: 90%;
         font-size: 25px;
-        background-image: url(../imag/fondorela.jpg);
+        background-image: url(../imag/brillante-fondo.jpg);
         background-size: cover;
         border-radius: 25px;
 
@@ -190,7 +199,7 @@
 
     h1 {
         font-family: $h1-font;
-        color: $color-font;
+        color: $color-font-h1;
         font-size: 25px;
         text-shadow: 3px 2px 3px rgb(56, 52, 52);
         text-align: center;
@@ -204,32 +213,35 @@
 
     nav {
         margin-bottom: 15px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family:$h1-font;
         font-size: 20px;
     }
 
-    header a {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        text-align: center;
-        color: cyan;
-        padding: 10px;
-        margin: 10px;
-        border-radius: 10px;
-        border-top: double;
-        border-left: double;
-        border-color: cyan;
+    header {
+        a {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            text-align: center;
+            color: cyan;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            border-top: double;
+            border-left: double;
+            border-color: cyan;
 
-        &:link {
-            text-decoration: none
+            &:link {
+                text-decoration: none
+            }
         }
     }
 
-
-    ul ul {
-        position: absolute;
-        display: none;
+    ul {
+        ul {
+            position: absolute;
+            display: none;
+        }
     }
 
     .gridFooter {
@@ -237,7 +249,7 @@
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
         flex-wrap: wrap;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family:$h1-font;
         border-bottom: double;
         border-color: cyan;
         grid-row-gap: 15px;
@@ -254,11 +266,11 @@
     }
 
     .audio {
-        width: 55px;
+        width: 100px;
         height: 55px;
         position: fixed;
         display: flex;
-        left: 10px;
+        right: 10px;
         top: 560px;
         margin-bottom: 30px;
         margin-right: 10px;
@@ -275,8 +287,8 @@
         height: 55px;
         position: fixed;
         display: flex;
-        right: 10px;
-        top: 265px;
+        left: 10px;
+        top: 440px;
         margin-bottom: 30px;
         margin-right: 10px;
         z-index: 999;
@@ -293,7 +305,7 @@
         position: fixed;
         display: flex;
         right: 10px;
-        top: 560px;
+        top: 440px;
         margin-bottom: 30px;
         margin-right: 10px;
         z-index: 999;
@@ -326,8 +338,8 @@
         height: 55px;
         position: fixed;
         display: flex;
-        top: 210px;
-        right: 10px;
+        top: 500px;
+        left: 10px;
         z-index: 999;
         margin-bottom: 30px;
         margin-right: 10px;
@@ -343,8 +355,8 @@
         height: 55px;
         position: fixed;
         display: flex;
-        top: 320px;
-        right: 10px;
+        top: 560px;
+        left: 10px;
         z-index: 999;
         margin-bottom: 30px;
         margin-right: 10px;
@@ -363,21 +375,12 @@
         padding: 0;
     }
 
-    h3 {
-        color: darkcyan;
-        font-variant: small-caps;
-    }
-
     .serviciosGenerales {
         width: 90%;
         color: black;
         margin: 30px;
         display: flex;
         flex-direction: column;
-        background-image: url(../imag/fondo-vertebral.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-
         p {
             margin-left: 15%;
             margin-right: 10%;
@@ -387,14 +390,17 @@
             color: black;
             width: 70%;
             flex-wrap: wrap;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-family:$h1-font;
+            background-image: url(../imag/fondo-vertebral.jpg);
             font-size: 18px;
         }
 
         h3 {
             margin-top: 20px;
             margin-left: 10%;
-            width: 15%;
+            width: 40%;
+            color: $color-h3;
+            font-variant: small-caps;
         }
     }
 
@@ -405,6 +411,13 @@
         margin: 20px;
         display: flex;
         flex-direction: column;
+        h3{
+            margin-top: 20px;
+            margin-left: 10%;
+            width: 40%;
+            color: $color-h3;
+            font-variant: small-caps;  
+        }
     }
 
     .gridformContenedor {
@@ -413,7 +426,7 @@
         grid-template-rows: 1fr 1fr;
         margin: 25px;
         flex-wrap: wrap;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family:$h1-font;
         font-size: 20px;
         font-variant: small-caps;
         text-align: center;
@@ -425,7 +438,7 @@
     }
 
     .divFieldset {
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family:$h1-font;
         font-size: 20px;
         font-variant: small-caps;
         text-align: center;
@@ -433,13 +446,15 @@
         width: 45%;
         height: 45%;
         color: white;
+        background-image: url(../imag/brillante-fondo.jpg);
+        border-radius: 25px;
     }
 
 
     .divPresentacion {
         display: flex;
         text-align: justify;
-        color: rgb(205, 13, 243);
+        color:cyan;
         align-items: center;
         justify-content: center;
         margin-bottom: 30px;
@@ -447,7 +462,7 @@
         margin-left: 20px;
         margin-right: 20px;
         font-size: 35px;
-        background-image: url(../imag/fondorela.jpg);
+        background-image: url(../imag/brillante-fondo.jpg);
         background-size: cover;
 
         p {
@@ -507,8 +522,8 @@
     }
 
     h1 {
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        color: rgb(59, 243, 243);
+        font-family:$h1-font;
+        color:$color-font-h1;
         font-size: 30px;
         text-shadow: 3px 2px 3px rgb(56, 52, 52);
         text-align: left;
@@ -521,7 +536,7 @@
 
     ul {
         li {
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-family:$h1-font;
             font-size: 20px;
             font-variant: small-caps;
             padding: 10px;
@@ -547,7 +562,7 @@
 
     nav {
         margin-bottom: 15px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family:$h1-font;
         font-size: 22px;
     }
 
@@ -582,7 +597,7 @@
         position: fixed;
         display: flex;
         right: 10px;
-        top: 135px;
+        top: 480px;
         margin-bottom: 30px;
         margin-right: 10px;
         z-index: 999;
@@ -598,7 +613,7 @@
         height: 55px;
         position: fixed;
         display: flex;
-        top: 75px;
+        top: 540px;
         right: 10px;
         z-index: 999;
         margin-bottom: 30px;
@@ -615,7 +630,7 @@
         height: 55px;
         position: fixed;
         display: flex;
-        top: 195px;
+        top: 600px;
         right: 10px;
         z-index: 999;
         margin-bottom: 30px;
@@ -632,7 +647,7 @@
         height: 55px;
         position: fixed;
         display: flex;
-        top: 255px;
+        top: 540px;
         right: 10px;
         z-index: 999;
         margin-bottom: 30px;
@@ -649,7 +664,7 @@
         height: 55px;
         position: fixed;
         display: flex;
-        top: 315px;
+        top: 480px;
         right: 10px;
         z-index: 999;
         margin-bottom: 30px;
