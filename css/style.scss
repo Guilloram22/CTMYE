@@ -10,58 +10,46 @@
  
     .serviciosGenerales {
         width: 90%;
-        color: greenyellow;
         margin-left: 25px;
         display: flex;
-        display: inline-block;
         flex-direction: column;
         border-radius: 10px;
         justify-content: center;
 
         p {
-            display: flex;
             margin-left: 15%;
             margin-right: 10%;
             padding: 15px;
-            font-style: italic;
+            font-style:$p-font-style;
             text-align: justify;
-            color: black;
+            font-weight: bold;  
             width: 70%;
             flex-wrap: wrap;
-            font-family:$h1-font;
-            font-size: 18px;
+            border-radius: 10px;         
             background-image: url(../imag/fondo-vertebral.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            border-radius: 10px;
         }
 
         h3 {
-            margin-top: 20px;
-            margin-left: 10%;
-            margin-bottom: 20px;
-            width: 40%;
-            color: $color-h3;
+            text-align: center;
+            margin: 20px;
+            width: auto;
             border-bottom: double;
             border-radius: 10px;
             border-color: cyan;
+            font-size: 25px;
+            font-family:$h1-font;
+            color:$color-h3;
         }
     }
 
     .paraQuienes {
+        width: 90%;
+        margin-left: 25px;
         display: flex;
-        flex-wrap: wrap;
-        display: inline-block;
-        width: 85%;
-        margin: 20px;
-        padding: 10px;
-        color: rgb(177, 169, 169);
-        flex-direction: row;
+        flex-direction: column;
+        border-radius: 10px;
         justify-content: center;
-        align-items: center;
-        text-align: justify;
-        font-family:$h1-font;
-        font-size: 18px;
+
 
         h3 {
             text-align: center;
@@ -76,15 +64,16 @@
         }
 
         p {
-            font-family:$h1-font;
-            font-size: 20px;
-            border-radius: 10px;
+            margin-left: 15%;
+            margin-right: 10%;
+            padding: 15px;
+            font-style:$p-font-style;
+            text-align: justify;
+            font-weight: bold;  
+            width: 70%;
+            flex-wrap: wrap;
+            border-radius: 10px;         
             background-image: url(../imag/fondo-vertebral.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            padding: 10px;
-            color: black;
-            margin: 10px;
         }
     }
 
@@ -377,46 +366,69 @@
 
     .serviciosGenerales {
         width: 90%;
-        color: black;
-        margin: 30px;
+        margin-left: 25px;
         display: flex;
         flex-direction: column;
+        border-radius: 10px;
+        justify-content: center;
+
         p {
             margin-left: 15%;
             margin-right: 10%;
             padding: 15px;
-            font-style: italic;
+            font-style:$p-font-style;
             text-align: justify;
-            color: black;
+            font-weight: bold;  
             width: 70%;
             flex-wrap: wrap;
-            font-family:$h1-font;
+            border-radius: 10px;         
             background-image: url(../imag/fondo-vertebral.jpg);
-            font-size: 18px;
         }
 
         h3 {
-            margin-top: 20px;
-            margin-left: 10%;
-            width: 40%;
-            color: $color-h3;
-            font-variant: small-caps;
+            margin: 20px;
+            width: auto;
+            border-bottom: double;
+            border-radius: 10px;
+            border-color: cyan;
+            font-size: 25px;
+            font-family:$h1-font;
+            color:$color-h3;
         }
     }
 
     .paraQuienes {
         display: flex;
-        width: 95%;
-        color: white;
+        flex-wrap: wrap;
+        display: inline-block;
+        width: 90%;
         margin: 20px;
-        display: flex;
-        flex-direction: column;
-        h3{
-            margin-top: 20px;
-            margin-left: 10%;
-            width: 40%;
-            color: $color-h3;
-            font-variant: small-caps;  
+        padding: 10px;
+        flex-direction: row;
+        justify-content: center;
+        font-family:$h1-font;
+        h3 {
+            text-align: center;
+            margin: 20px;
+            border-bottom: double;
+            border-radius: 10px;
+            border-color: cyan;
+            font-size: 25px;
+            font-family:$h1-font;
+            color:$color-h3;
+        }
+
+        p {
+            margin-left: 15%;
+            margin-right: 10%;
+            padding: 15px;
+            font-style:$p-font-style;
+            text-align: justify;
+            font-weight: bold;  
+            width: 70%;
+            flex-wrap: wrap;
+            border-radius: 10px;         
+            background-image: url(../imag/fondo-vertebral.jpg);
         }
     }
 

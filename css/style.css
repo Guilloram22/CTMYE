@@ -5,12 +5,10 @@
   }
   .serviciosGenerales {
     width: 90%;
-    color: greenyellow;
     margin-left: 25px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    display: inline-block;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -21,34 +19,28 @@
             justify-content: center;
   }
   .serviciosGenerales p {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-left: 15%;
+    margin-left: 12%;
     margin-right: 10%;
     padding: 15px;
-    font-style: italic;
+    font-style: black, justify;
     text-align: justify;
-    color: black;
-    width: 70%;
+    font-weight: bold;
+    width: 75%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif 25px;
-    font-size: 18px;
-    background-image: url(../imag/fondo-vertebral.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
     border-radius: 10px;
+    background-image: url(../imag/fondo-vertebral.jpg);
   }
   .serviciosGenerales h3 {
-    margin-top: 20px;
-    margin-left: 10%;
-    margin-bottom: 20px;
-    width: 40%;
-    color: darkcyan;
+    text-align: center;
+    margin: 20px;
+    width: auto;
     border-bottom: double;
     border-radius: 10px;
     border-color: cyan;
+    font-size: 25px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif 25px;
+    color: darkcyan;
   }
   .paraQuienes {
     display: -webkit-box;
@@ -57,10 +49,9 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     display: inline-block;
-    width: 85%;
+    width: 90%;
     margin: 20px;
     padding: 10px;
-    color: #b1a9a9;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -68,12 +59,7 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: justify;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif 25px;
-    font-size: 18px;
   }
   .paraQuienes h3 {
     text-align: center;
@@ -88,14 +74,17 @@
   }
   .paraQuienes p {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif 25px;
-    font-size: 20px;
+    font-style: black, justify;
     border-radius: 10px;
     background-image: url(../imag/fondo-vertebral.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 10px;
-    color: black;
-    margin: 10px;
+    padding: 15px;
+    width: 75%;
+    margin-left: 12%;
+    margin-right: 10%;
+    text-align: justify;
+    font-weight: bold; 
   }
   .gridformContenedor {
     display: -webkit-box;
@@ -424,9 +413,8 @@
     padding: 0;
   }
   .serviciosGenerales {
-    width: 90%;
-    color: black;
-    margin: 30px;
+    width: 95%;
+    margin-left: 25px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -434,47 +422,73 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    border-radius: 10px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .serviciosGenerales p {
     margin-left: 15%;
     margin-right: 10%;
     padding: 15px;
-    font-style: italic;
-    text-align: justify;
-    color: black;
+    font-style: black, justify;
     width: 70%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif 25px;
     background-image: url(../imag/fondo-vertebral.jpg);
-    font-size: 18px;
   }
   .serviciosGenerales h3 {
-    margin-top: 20px;
-    margin-left: 10%;
-    width: 40%;
+    text-align: center;
+    margin: 25px;
+    width: auto;
+    border-bottom: double;
+    border-radius: 10px;
+    border-color: cyan;
+    font-size: 25px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif 25px;
     color: darkcyan;
-    font-variant: small-caps;
   }
   .paraQuienes {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    display: inline-block;
     width: 95%;
-    color: white;
     margin: 20px;
-    display: flex;
-    -webkit-box-orient: vertical;
+    padding: 10px;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif 25px;
   }
   .paraQuienes h3 {
-    margin-top: 20px;
-    margin-left: 10%;
-    width: 40%;
+    text-align: center;
+    margin: 20px;
+    width: auto;
+    border-bottom: double;
+    border-radius: 10px;
+    border-color: cyan;
+    font-size: 25px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif 25px;
     color: darkcyan;
-    font-variant: small-caps;
+  }
+  .paraQuienes p {
+    margin-left: 15%;
+    margin-right: 10%;
+    padding: 15px;
+    font-style: black, justify;
+    width: 70%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif 25px;
+    background-image: url(../imag/fondo-vertebral.jpg);
   }
   .gridformContenedor {
     display: -webkit-box;
