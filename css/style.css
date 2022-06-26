@@ -19,13 +19,13 @@
             justify-content: center;
   }
   .serviciosGenerales p {
-    margin-left: 12%;
+    margin-left: 15%;
     margin-right: 10%;
     padding: 15px;
     font-style: black, justify;
     text-align: justify;
     font-weight: bold;
-    width: 75%;
+    width: 70%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     border-radius: 10px;
@@ -43,23 +43,19 @@
     color: darkcyan;
   }
   .paraQuienes {
+    width: 90%;
+    margin-left: 25px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    display: inline-block;
-    width: 90%;
-    margin: 20px;
-    padding: 10px;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-radius: 10px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif 25px;
   }
   .paraQuienes h3 {
     text-align: center;
@@ -73,18 +69,17 @@
     color: darkcyan;
   }
   .paraQuienes p {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif 25px;
+    margin-left: 15%;
+    margin-right: 10%;
+    padding: 15px;
     font-style: black, justify;
+    text-align: justify;
+    font-weight: bold;
+    width: 70%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     border-radius: 10px;
     background-image: url(../imag/fondo-vertebral.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 15px;
-    width: 75%;
-    margin-left: 12%;
-    margin-right: 10%;
-    text-align: justify;
-    font-weight: bold; 
   }
   .gridformContenedor {
     display: -webkit-box;
@@ -413,7 +408,7 @@
     padding: 0;
   }
   .serviciosGenerales {
-    width: 95%;
+    width: 90%;
     margin-left: 25px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -432,15 +427,16 @@
     margin-right: 10%;
     padding: 15px;
     font-style: black, justify;
+    text-align: justify;
+    font-weight: bold;
     width: 70%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif 25px;
+    border-radius: 10px;
     background-image: url(../imag/fondo-vertebral.jpg);
   }
   .serviciosGenerales h3 {
-    text-align: center;
-    margin: 25px;
+    margin: 20px;
     width: auto;
     border-bottom: double;
     border-radius: 10px;
@@ -456,7 +452,7 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     display: inline-block;
-    width: 95%;
+    width: 90%;
     margin: 20px;
     padding: 10px;
     -webkit-box-orient: horizontal;
@@ -471,7 +467,6 @@
   .paraQuienes h3 {
     text-align: center;
     margin: 20px;
-    width: auto;
     border-bottom: double;
     border-radius: 10px;
     border-color: cyan;
@@ -484,10 +479,12 @@
     margin-right: 10%;
     padding: 15px;
     font-style: black, justify;
+    text-align: justify;
+    font-weight: bold;
     width: 70%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif 25px;
+    border-radius: 10px;
     background-image: url(../imag/fondo-vertebral.jpg);
   }
   .gridformContenedor {
