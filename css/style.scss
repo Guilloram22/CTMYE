@@ -7,7 +7,7 @@
         margin: 0;
         padding: 0;
     }
- 
+
     .serviciosGenerales {
         width: 90%;
         margin-left: 25px;
@@ -117,6 +117,7 @@
         font-size: 25px;
         background-image: url(../imag/brillante-fondo.jpg);
         background-size: cover;
+        background-repeat: no-repeat;
         border-radius: 25px;
 
         p {
@@ -136,15 +137,19 @@
         color: white;
         align-items: center;
         margin: 10px;
+        margin-left: 15px;
         font-size: 15px;
         padding: 10px;
-        width: 90%;
+        width: 80%;
         flex-direction: column;
+        background-image: url(../imag/brillante-fondo.jpg);
+        border-radius: 20px;
     }
 
     .iframeMapa {
         display: flex;
         margin-top: 60px;
+        margin-bottom: 50px;
         width: 90%;
         height: 350px;
         margin-left: 10px;
@@ -380,10 +385,13 @@
             flex-wrap: wrap;
             border-radius: 10px;         
             background-image: url(../imag/fondo-vertebral.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
         }
 
         h3 {
             margin: 20px;
+            margin-left: 35%;
             width: auto;
             border-bottom: double;
             border-radius: 10px;
@@ -407,6 +415,8 @@
         h3 {
             text-align: center;
             margin: 20px;
+            margin-left: 35%;
+            width: auto;
             border-bottom: double;
             border-radius: 10px;
             border-color: cyan;
@@ -425,6 +435,8 @@
             flex-wrap: wrap;
             border-radius: 10px;         
             background-image: url(../imag/fondo-vertebral.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
         }
     }
 
