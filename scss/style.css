@@ -13,10 +13,17 @@
   }
   .serviciosGenerales {
     width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     border-radius: 10px;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .serviciosGenerales p {
     margin: 5px 20% 5px 20%;
@@ -25,7 +32,8 @@
     text-align: justify;
     font-weight: bold;
     width: 70%;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     border-radius: 10px;
     background-image: url(../imag/fondo-vertebral.jpg);
   }
@@ -38,15 +46,22 @@
     border-color: cyan;
     font-size: 25px;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold;
-    color: rgb(11, 243, 135);
+    color: #0bf387;
   }
   .paraQuienes {
     width: 90%;
     margin-left: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     border-radius: 10px;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .paraQuienes h3 {
     text-align: center;
@@ -57,7 +72,7 @@
     border-color: cyan;
     font-size: 25px;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold;
-    color: rgb(11, 243, 135);
+    color: #0bf387;
   }
   .paraQuienes p {
     margin-left: 15%;
@@ -67,26 +82,41 @@
     text-align: justify;
     font-weight: bold;
     width: 70%;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     border-radius: 10px;
     background-image: url(../imag/fondo-vertebral.jpg);
   }
   .gridformContenedor {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
     margin: 15px;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold;
     font-size: 25px;
     font-variant: small-caps;
     width: 90%;
     height: 90%;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .divFieldset {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold;
     font-size: 20px;
@@ -95,17 +125,25 @@
     width: 90%;
     height: 90%;
     color: white;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin: 15px;
     background-image: url(../imag/brillante-fondo.jpg);
     border-radius: 25px;
   }
   .divPresentacion {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     text-align: justify;
     color: cyan;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-bottom: 30px;
     margin-top: 30px;
     width: 90%;
@@ -125,48 +163,69 @@
     margin-bottom: 15px;
   }
   .datosUbicacion {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     text-align: center;
     color: white;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 10px;
     margin-left: 15px;
     font-size: 15px;
     padding: 10px;
     width: 80%;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     background-image: url(../imag/brillante-fondo.jpg);
     border-radius: 20px;
   }
   .iframeMapa {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-top: 60px;
     margin-bottom: 50px;
     width: 90%;
     height: 350px;
     margin-left: 10px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
   }
   .map {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     height: 100%;
     border-radius: 10px;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   form {
     background-color: transparent;
     width: 90%;
   }
   .gridContenedor {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
     grid-row-gap: 15px;
     margin: 10px;
     justify-items: center;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   body {
     background-image: url(../imag/column.jpg);
@@ -176,8 +235,8 @@
   h1 {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold;
     font-size: 30px;
-    color: rgb(38, 223, 21);
-    text-shadow: 3px 2px 3px rgb(56, 52, 52);
+    color: #26df15;
+    text-shadow: 3px 2px 3px #383434;
     text-align: center;
     margin-bottom: 15px;
     padding: 15px;
@@ -191,9 +250,15 @@
     font-size: 20px;
   }
   header a {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
     color: cyan;
     padding: 10px;
@@ -211,21 +276,25 @@
     display: none;
   }
   .gridFooter {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    flex-wrap: wrap;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold;
     border-bottom: double;
     border-color: cyan;
     grid-row-gap: 15px;
     margin: 10px;
     width: auto;
-    color: rgb(239, 239, 243);
+    color: #efeff3;
     text-align: center;
   }
   footer {
-    color: rgb(239, 239, 243);
+    color: #efeff3;
     text-align: center;
     padding: 25px;
   }
@@ -233,93 +302,118 @@
     width: 100px;
     height: 55px;
     position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     right: 10px;
     top: 560px;
     margin-bottom: 30px;
     margin-right: 10px;
     z-index: 999;
+    -webkit-transition: 1s;
     transition: 1s;
   }
   .audio:hover {
-    transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
   }
   .wspIcon {
     width: 55px;
     height: 55px;
     position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     left: 10px;
     top: 440px;
     margin-bottom: 30px;
     margin-right: 10px;
     z-index: 999;
+    -webkit-transition: all 1s;
     transition: all 1s;
   }
   .wspIcon:hover {
-    transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
   }
   .iconSugerencia {
     width: 55px;
     height: 55px;
     position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     right: 10px;
     top: 440px;
     margin-bottom: 30px;
     margin-right: 10px;
     z-index: 999;
+    -webkit-transition: all 1s;
     transition: all 1s;
   }
   .iconSugerencia:hover {
-    transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
   }
   .iconHome {
     width: 55px;
     height: 55px;
     position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     right: 10px;
     top: 500px;
     margin-bottom: 30px;
     margin-right: 10px;
     z-index: 999;
+    -webkit-transition: all 1s;
     transition: all 1s;
   }
   .iconHome:hover {
-    transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
   }
   .faceIcon {
     width: 55px;
     height: 55px;
     position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     top: 500px;
     left: 10px;
     z-index: 999;
     margin-bottom: 30px;
     margin-right: 10px;
+    -webkit-transition: all 1s;
     transition: all 1s;
   }
   .faceIcon:hover {
-    transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
   }
   .instaIcon {
     width: 55px;
     height: 55px;
     position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     top: 560px;
     left: 10px;
     z-index: 999;
     margin-bottom: 30px;
     margin-right: 10px;
+    -webkit-transition: all 1s;
     transition: all 1s;
   }
   .instaIcon:hover {
-    transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
   }
 }
+
 @media screen and (min-width: 750px) {
   * {
     margin: 0;
@@ -335,8 +429,13 @@
   }
   .serviciosGenerales {
     width: 0%, 9;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .serviciosGenerales p {
     margin: 5px 20% 5px 20%;
@@ -345,7 +444,8 @@
     font-size: 15px;
     text-align: black, justify;
     width: 0%, 7;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     border-radius: 10px, 5;
     background: url(../imag/fondo-vertebral.jpg);
     background-repeat: no-repeat;
@@ -356,25 +456,30 @@
     width: 25%;
     border-bottom: double;
     border-radius: 10px, 5;
-    border-color: rgb(232, 16, 240);
+    border-color: #e810f0;
     font-size: 30px;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold;
-    color: rgb(11, 243, 135);
+    color: #0bf387;
   }
   .paraQuienes {
     width: 0%, 9;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .paraQuienes h3 {
     margin: 10px 30% 15px 30%;
     width: 25%;
     border-bottom: double;
     border-radius: 10px, 5;
-    border-color: rgb(232, 16, 240);
+    border-color: #e810f0;
     font-size: 30px;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold;
-    color: rgb(11, 243, 135);
+    color: #0bf387;
   }
   .paraQuienes p {
     margin: 5px 20% 5px 20%;
@@ -383,22 +488,33 @@
     font-size: 15px;
     text-align: black, justify;
     width: 0%, 7;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     border-radius: 10px, 5;
     background: url(../imag/fondo-vertebral.jpg);
     background-repeat: no-repeat;
     background-size: cover;
   }
   .gridformContenedor {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    flex-wrap: wrap;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     font-variant: small-caps;
     width: 0%, 45;
     height: 0%, 45;
-    flex-direction: row;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .divFieldset {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold;
@@ -411,11 +527,17 @@
     background-image: url(../imag/brillante-fondo.jpg);
   }
   .divPresentacion {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     text-align: justify;
     color: cyan;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-bottom: 30px;
     width: 40%;
     margin-left: 20px;
@@ -434,23 +556,36 @@
     margin-bottom: 15px;
   }
   .datosUbicacion {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     text-align: center;
     color: white;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 20px;
     padding: 10px;
     width: 40%;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .iframeMapa {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 45%;
     margin: 25px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
   }
   .map {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 450px;
     height: 400px;
@@ -462,6 +597,8 @@
     padding: 15px;
   }
   .contenedorMapas {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 15px;
     padding: 15px;
@@ -474,8 +611,8 @@
   h1 {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold;
     font-size: 30px;
-    color: rgb(38, 223, 21);
-    text-shadow: 3px 2px 3px rgb(56, 52, 52);
+    color: #26df15;
+    text-shadow: 3px 2px 3px #383434;
     text-align: left;
     margin-bottom: 15px;
     margin-top: 15px;
@@ -490,6 +627,8 @@
     padding: 10px;
     margin: 10px;
     width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     display: inline-block;
     border-radius: 5px;
@@ -512,98 +651,121 @@
     text-decoration: none;
   }
   footer {
-    color: rgb(255, 255, 255);
+    color: white;
   }
   .audio {
     width: 100px;
     height: 55px;
     position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     right: 10px;
     top: 600px;
     margin-bottom: 30px;
     margin-right: 10px;
     z-index: 999;
+    -webkit-transition: 1s;
     transition: 1s;
   }
   .audio:hover {
-    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
   }
   .wspIcon {
     width: 55px;
     height: 55px;
     position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     right: 10px;
     top: 480px;
     margin-bottom: 30px;
     margin-right: 10px;
     z-index: 999;
+    -webkit-transition: all 1s;
     transition: all 1s;
   }
   .wspIcon:hover {
-    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
   }
   .faceIcon {
     width: 55px;
     height: 55px;
     position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     top: 540px;
     right: 10px;
     z-index: 999;
     margin-bottom: 30px;
     margin-right: 10px;
+    -webkit-transition: all 1s;
     transition: all 1s;
   }
   .faceIcon:hover {
-    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
   }
   .instaIcon {
     width: 55px;
     height: 55px;
     position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     top: 600px;
     right: 10px;
     z-index: 999;
     margin-bottom: 30px;
     margin-right: 10px;
+    -webkit-transition: all 1s;
     transition: all 1s;
   }
   .instaIcon:hover {
-    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
   }
   .iconHome {
     width: 55px;
     height: 55px;
     position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     top: 540px;
     right: 10px;
     z-index: 999;
     margin-bottom: 30px;
     margin-right: 10px;
+    -webkit-transition: all 1s;
     transition: all 1s;
   }
   .iconHome:hover {
-    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
   }
   .iconSugerencia {
     width: 55px;
     height: 55px;
     position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     top: 480px;
     right: 10px;
     z-index: 999;
     margin-bottom: 30px;
     margin-right: 10px;
+    -webkit-transition: all 1s;
     transition: all 1s;
   }
   .iconSugerencia:hover {
-    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
   }
 }
-
 /*# sourceMappingURL=style.css.map */

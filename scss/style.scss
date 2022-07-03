@@ -1,6 +1,7 @@
-@import "fuente";
 @import "colores";
-
+@import "fuentes";
+@import "backgrounds";
+@import "tamaño";
 
 @media screen and (min-width: 350px) {
     * {
@@ -17,15 +18,13 @@
     }
     .serviciosGenerales {
         width: 90%;
-        margin-left: 25px;
         display: flex;
         flex-direction: column;
         border-radius: 10px;
         justify-content: center;
 
         p {
-            margin-left: 15%;
-            margin-right: 10%;
+            margin:$margenParrafos;
             padding: 15px;
             font-style:$p-font-style;
             text-align: justify;
@@ -44,7 +43,7 @@
             border-radius: 10px;
             border-color: cyan;
             font-size: 25px;
-            font-family:$h1-font;
+            font-family:$fuentePrincipal;
             color:$color-h3;
         }
     }
@@ -64,7 +63,7 @@
             border-radius: 10px;
             border-color: cyan;
             font-size: 25px;
-            font-family:$h1-font;
+            font-family:$fuentePrincipal;
             color:$color-h3;
         }
         p {
@@ -87,7 +86,7 @@
         grid-template-rows: auto;
         margin: 15px;
         flex-wrap: wrap;
-        font-family:$h1-font;
+        font-family:$fuentePrincipal;
         font-size: 25px;
         font-variant: small-caps;
         width: 90%;
@@ -99,7 +98,7 @@
 
     .divFieldset {
         display: flex;
-        font-family:$h1-font;
+        font-family:$fuentePrincipal;
         font-size: 20px;
         font-variant: small-caps;
         text-align: center;
@@ -197,9 +196,9 @@
     }
 
     h1 {
-        font-family: $h1-font;
-        color: $color-font-h1;
-        font-size: 25px;
+        font-family: $fuentePrincipal;
+        font-size: $sizeFuente;
+        color: $colorPrimario;
         text-shadow: 3px 2px 3px rgb(56, 52, 52);
         text-align: center;
         margin-bottom: 15px;
@@ -212,7 +211,7 @@
 
     nav {
         margin-bottom: 15px;
-        font-family:$h1-font;
+        font-family:$fuentePrincipal;
         font-size: 20px;
     }
 
@@ -248,7 +247,7 @@
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
         flex-wrap: wrap;
-        font-family:$h1-font;
+        font-family:$fuentePrincipal;
         border-bottom: double;
         border-color: cyan;
         grid-row-gap: 15px;
@@ -383,76 +382,60 @@
     }
 
     .serviciosGenerales {
-        width: 90%;
-        margin-left: 25px;
+        width: ($ancho)*0,9;
         display: flex;
         flex-direction: column;
-        border-radius: 10px;
-        justify-content: center;
-
-        p {
-            margin-left: 15%;
-            margin-right: 10%;
-            padding: 15px;
-            font-style:$p-font-style;
-            text-align: justify;
-            font-weight: bold;  
-            width: 70%;
+       p {
+            margin: $margenParrafos;
+            padding: $paddingParrafos/2;
+            font-style: $fuentePrincipal;
+            font-size: $sizeFuente/2;
+            text-align: $p-font-style;
+            width: ($ancho)*0,7;
             flex-wrap: wrap;
-            border-radius: 10px;         
-            background-image: url(../imag/fondo-vertebral.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
+            border-radius: $bordesRadio*1,5;         
+            background: $parrafosFondo;
+            background-repeat: $imagenRepetida;
+            background-size: $coberturaImagen;            
         }
-
         h3 {
-            margin: 20px;
-            margin-left: 35%;
-            width: auto;
+            margin: $margen-h3;
+            width: ($ancho)/4;
             border-bottom: double;
-            border-radius: 10px;
-            border-color: cyan;
-            font-size: 25px;
-            font-family:$h1-font;
+            border-radius: $bordesRadio*1,5;
+            border-color: $bordesColor;
+            font-size: $sizeFuente;
+            font-family:$fuentePrincipal;
             color:$color-h3;
         }
     }
 
     .paraQuienes {
+        width: ($ancho)*0,9;
         display: flex;
-        flex-wrap: wrap;
-        display: inline-block;
-        width: 90%;
-        margin: 20px;
-        padding: 10px;
-        flex-direction: row;
-        justify-content: center;
-        font-family:$h1-font;
+        flex-direction: column;
         h3 {
-            text-align: center;
-            margin: 20px;
-            margin-left: 35%;
-            width: auto;
+            margin: $margen-h3;
+            width: ($ancho)/4;
             border-bottom: double;
-            border-radius: 10px;
-            border-color: cyan;
-            font-size: 25px;
-            font-family:$h1-font;
+            border-radius: $bordesRadio*1,5;
+            border-color: $bordesColor;
+            font-size: $sizeFuente;
+            font-family:$fuentePrincipal;
             color:$color-h3;
         }
         p {
-            margin-left: 15%;
-            margin-right: 10%;
-            padding: 15px;
-            font-style:$p-font-style;
-            text-align: justify;
-            font-weight: bold;  
-            width: 70%;
+            margin: $margenParrafos;
+            padding: $paddingParrafos/2;
+            font-style: $fuentePrincipal;
+            font-size: $sizeFuente/2;
+            text-align: $p-font-style;
+            width: ($ancho)*0,7;
             flex-wrap: wrap;
-            border-radius: 10px;         
-            background-image: url(../imag/fondo-vertebral.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
+            border-radius: $bordesRadio*1,5;         
+            background: $parrafosFondo;
+            background-repeat: $imagenRepetida;
+            background-size: $coberturaImagen;            
         }
     }
 
@@ -460,30 +443,23 @@
         display: flex;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        margin: 25px;
         flex-wrap: wrap;
-        font-family:$h1-font;
-        font-size: 20px;
         font-variant: small-caps;
-        text-align: center;
-        width: 90%;
-        height: 90%;
-        align-items: center;
+        width: $ancho*0,45;
+        height: $alto*0,45;
         flex-direction: row;
         justify-content: center;
     }
-
-    .divFieldset {
-        font-family:$h1-font;
-        font-size: 20px;
+        .divFieldset {
+        font-family:$fuentePrincipal;
+        font-size: $sizeFuente/2;
         font-variant: small-caps;
         text-align: center;
-        margin-left: 20px;
-        width: 45%;
-        height: 45%;
-        color: white;
-        background-image: url(../imag/brillante-fondo.jpg);
-        border-radius: 25px;
+
+        width: $ancho*0,40;
+        height: $alto*0,40;
+        color: $colorFormulario;
+        background-image: $formularioFondo;
     }
 
 
@@ -498,13 +474,15 @@
         margin-left: 20px;
         margin-right: 20px;
         font-size: 35px;
-        background-image: url(../imag/brillante-fondo.jpg);
-        background-size: cover;
+
 
         p {
             padding: 30px 40px 30px 40px;
             font-style: italic;
             font-variant: small-caps;
+            background-image: url(../imag/brillante-fondo.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
         }
     }
 
@@ -558,9 +536,9 @@
     }
 
     h1 {
-        font-family:$h1-font;
-        color:$color-font-h1;
-        font-size: 30px;
+        font-family: $fuentePrincipal;
+        font-size: $sizeFuente;
+        color: $colorPrimario;
         text-shadow: 3px 2px 3px rgb(56, 52, 52);
         text-align: left;
         margin-bottom: 15px;
@@ -572,7 +550,7 @@
 
     ul {
         li {
-            font-family:$h1-font;
+            font-family:$fuentePrincipal;
             font-size: 20px;
             font-variant: small-caps;
             padding: 10px;
@@ -598,7 +576,7 @@
 
     nav {
         margin-bottom: 15px;
-        font-family:$h1-font;
+        font-family:$fuentePrincipal;
         font-size: 22px;
     }
 
