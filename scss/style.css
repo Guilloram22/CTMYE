@@ -11,6 +11,18 @@
   .navbar-brand {
     border: none;
   }
+  h1 {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold;
+    font-size: 30px;
+    color: #fd0d0d;
+    text-shadow: 5px 3px 5px #000203;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding: 15px;
+    background-image: url("../imag/sag.jpeg");
+    background-size: cover;
+  }
   .serviciosGenerales {
     width: 90%;
     display: -webkit-box;
@@ -38,19 +50,17 @@
     background-image: url(../imag/fondo-vertebral.jpg);
   }
   .serviciosGenerales h3 {
-    text-align: center;
-    margin: 20px;
+    margin: 10px 30% 15px 30%;
     width: auto;
     border-bottom: double;
-    border-radius: 10px;
-    border-color: cyan;
-    font-size: 25px;
+    border-radius: 15px;
+    border-color: #e810f0;
+    font-size: 30px;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold;
     color: #0bf387;
   }
   .paraQuienes {
     width: 90%;
-    margin-left: 25px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -64,28 +74,29 @@
             justify-content: center;
   }
   .paraQuienes h3 {
-    text-align: center;
-    margin: 20px;
-    width: 50%;
+    margin: 10px 30% 15px 30%;
+    width: auto;
     border-bottom: double;
-    border-radius: 10px;
-    border-color: cyan;
-    font-size: 25px;
+    border-radius: 15px;
+    border-color: #e810f0;
+    font-size: 30px;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold;
     color: #0bf387;
   }
   .paraQuienes p {
-    margin-left: 15%;
-    margin-right: 10%;
+    margin: 5px 20% 5px 20%;
     padding: 15px;
     font-style: black, justify;
-    text-align: justify;
     font-weight: bold;
+    font-size: 15px;
+    text-align: justify;
     width: 70%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    border-radius: 10px;
-    background-image: url(../imag/fondo-vertebral.jpg);
+    border-radius: 15px;
+    background: url("../imag/fondo-vertebral.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .gridformContenedor {
     display: -webkit-box;
@@ -231,18 +242,6 @@
     background-image: url(../imag/column.jpg);
     background-size: cover;
     background-attachment: fixed;
-  }
-  h1 {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold;
-    font-size: 30px;
-    color: #26df15;
-    text-shadow: 3px 2px 3px #383434;
-    text-align: center;
-    margin-bottom: 15px;
-    padding: 15px;
-    background-image: url(../imag/sag.jpeg);
-    background-size: cover;
-    border-color: cyan;
   }
   nav {
     margin-bottom: 15px;
@@ -424,6 +423,18 @@
     width: 70px;
     height: 70px;
   }
+  h1 {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold;
+    font-size: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold;
+    color: #fd0d0d;
+    text-shadow: 5px 3px 5px #000203;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding: 15px;
+    background-image: url("../imag/sag.jpeg");
+    background-size: cover;
+  }
   .navbar-brand {
     border: none;
   }
@@ -441,13 +452,12 @@
     margin: 5px 20% 5px 20%;
     padding: 15px;
     font-style: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold;
-    font-size: 15px;
-    text-align: black, justify;
+    font-size: black, justify;
     width: 0%, 7;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     border-radius: 10px, 5;
-    background: url(../imag/fondo-vertebral.jpg);
+    background: url("../imag/fondo-vertebral.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -491,7 +501,7 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     border-radius: 10px, 5;
-    background: url(../imag/fondo-vertebral.jpg);
+    background: url("../imag/fondo-vertebral.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -503,11 +513,15 @@
         grid-template-columns: 1fr 1fr;
     -ms-grid-rows: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
+    margin: 25px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     font-variant: small-caps;
-    width: 0%, 45;
-    height: 0%, 45;
+    width: 0%, 9;
+    height: 0%, 9;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -516,22 +530,25 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .divFieldset {
+  .gridformContenedor .divFieldset {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold;
     font-size: 15px;
     font-variant: small-caps;
     text-align: center;
-    width: 0%, 40;
-    height: 0%, 40;
+    margin: 15px;
+    width: 50%;
+    height: 0%, 45;
     color: white;
-    background-image: url(../imag/brillante-fondo.jpg);
+    background-image: url("../imag/brillante-fondo.jpg");
+    border-radius: 400px;
   }
-  .divPresentacion {
+  .gridformContenedor .divFieldset .botonInput {
+    margin-bottom: 15px;
+  }
+  .gridformContenedor .divPresentacion {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    text-align: justify;
-    color: cyan;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -539,27 +556,25 @@
         -ms-flex-pack: center;
             justify-content: center;
     margin-bottom: 30px;
-    width: 40%;
-    margin-left: 20px;
-    margin-right: 20px;
-    font-size: 35px;
+    width: 33.33333%;
+    margin: 15px;
   }
-  .divPresentacion p {
-    padding: 30px 40px 30px 40px;
-    font-style: italic;
+  .gridformContenedor .divPresentacion p {
+    padding: 30px;
+    font-style: black, justify;
     font-variant: small-caps;
-    background-image: url(../imag/brillante-fondo.jpg);
+    background-image: url("../imag/brillante-fondo.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    text-align: justify;
+    color: cyan;
+    border-radius: 20px;
   }
-  .botonInput {
-    margin-bottom: 15px;
-  }
-  .datosUbicacion {
+  .gridformContenedor .datosUbicacion {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    text-align: center;
+    text-align: justify;
     color: white;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -572,7 +587,7 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .iframeMapa {
+  .gridformContenedor .iframeMapa {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -583,69 +598,40 @@
             align-items: center;
     text-align: center;
   }
-  .map {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 450px;
-    height: 400px;
-    border-radius: 10px;
-  }
-  form {
-    width: 500px;
-    background-color: transparent;
-    padding: 15px;
-  }
-  .contenedorMapas {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 15px;
-    padding: 15px;
+  .gridformContenedor .iframeMapa .map {
+    width: 100%;
+    height: 0%, 45;
+    border-radius: 20px;
   }
   body {
     background-image: url("../imag/column.jpg");
     background-size: cover;
     background-attachment: fixed;
   }
-  h1 {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold;
-    font-size: 30px;
-    color: #26df15;
-    text-shadow: 3px 2px 3px #383434;
-    text-align: left;
-    margin-bottom: 15px;
-    margin-top: 15px;
-    padding: 15px;
-    background-image: url(../imag/sag.jpeg);
-    background-size: cover;
-  }
   ul li {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold;
-    font-size: 20px;
     font-variant: small-caps;
     padding: 10px;
     margin: 10px;
-    width: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     display: inline-block;
-    border-radius: 5px;
-    text-align: left;
   }
   header a {
-    border-style: double;
-    border-top: cyan;
-    border-left: cyan;
+    border: double cyan top left;
     padding: 10px;
-    margin: 1px;
-    border-radius: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    font-size: 30px;
+  }
+  header a:hover {
+    background-color: greenyellow;
   }
   nav {
     margin-bottom: 15px;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold;
-    font-size: 22px;
+    font-size: 20px;
   }
   a:link {
     text-decoration: none;
@@ -665,8 +651,8 @@
     margin-bottom: 30px;
     margin-right: 10px;
     z-index: 999;
-    -webkit-transition: 1s;
-    transition: 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
   }
   .audio:hover {
     -webkit-transform: scale(1.5);
