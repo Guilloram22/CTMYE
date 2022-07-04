@@ -106,14 +106,12 @@
         grid-template-columns: 1fr;
     -ms-grid-rows: auto;
         grid-template-rows: auto;
-    margin: 15px;
+    margin: 25px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold;
-    font-size: 25px;
     font-variant: small-caps;
-    width: 90%;
-    height: 90%;
+    width: 0%, 9;
+    height: 0%, 9;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -125,30 +123,25 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .divFieldset {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .gridformContenedor .divFieldset {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold;
-    font-size: 20px;
+    font-size: 15px;
     font-variant: small-caps;
     text-align: center;
-    width: 90%;
-    height: 90%;
-    color: white;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     margin: 15px;
-    background-image: url(../imag/brillante-fondo.jpg);
-    border-radius: 25px;
+    width: 50%;
+    height: 0%, 45;
+    color: white;
+    background-image: url("../imag/brillante-fondo.jpg");
+    border-radius: 400px;
   }
-  .divPresentacion {
+  .gridformContenedor .divFieldset .botonInput {
+    margin-bottom: 15px;
+  }
+  .gridformContenedor .divPresentacion {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    text-align: justify;
-    color: cyan;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -156,73 +149,52 @@
         -ms-flex-pack: center;
             justify-content: center;
     margin-bottom: 30px;
-    margin-top: 30px;
-    width: 90%;
-    font-size: 25px;
-    background-image: url(../imag/brillante-fondo.jpg);
+    width: 33.33333%;
+    margin: 15px;
+  }
+  .gridformContenedor .divPresentacion p {
+    padding: 30px;
+    font-style: black, justify;
+    font-variant: small-caps;
+    background-image: url("../imag/brillante-fondo.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 25px;
+    text-align: justify;
+    color: cyan;
+    border-radius: 20px;
   }
-  .divPresentacion p {
-    font-style: italic;
-    font-variant: small-caps;
-    padding: 20px 30px 20px 30px;
-    background-image: url(../imag/brillante-fondo.jpg);
-  }
-  .botonInput {
-    margin-bottom: 15px;
-  }
-  .datosUbicacion {
+  .gridformContenedor .datosUbicacion {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    text-align: center;
+    text-align: justify;
     color: white;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 10px;
-    margin-left: 15px;
-    font-size: 15px;
+    margin: 20px;
     padding: 10px;
-    width: 80%;
+    width: 40%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-image: url(../imag/brillante-fondo.jpg);
-    border-radius: 20px;
   }
-  .iframeMapa {
+  .gridformContenedor .iframeMapa {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 60px;
-    margin-bottom: 50px;
-    width: 90%;
-    height: 350px;
-    margin-left: 10px;
+    width: 45%;
+    margin: 25px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
   }
-  .map {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .gridformContenedor .iframeMapa .map {
     width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  form {
-    background-color: transparent;
-    width: 90%;
+    height: 0%, 45;
+    border-radius: 20px;
   }
   .gridContenedor {
     display: -ms-grid;
@@ -239,63 +211,29 @@
             align-items: center;
   }
   body {
-    background-image: url(../imag/column.jpg);
+    background-image: url("../imag/column.jpg");
     background-size: cover;
     background-attachment: fixed;
+  }
+  header a {
+    border: double cyan top left;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    font-size: 30px;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  header a:hover {
+    background-color: greenyellow;
   }
   nav {
     margin-bottom: 15px;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold;
     font-size: 20px;
   }
-  header a {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-    color: cyan;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 10px;
-    border-top: double;
-    border-left: double;
-    border-color: cyan;
-  }
-  header a:link {
-    text-decoration: none;
-  }
-  ul ul {
-    position: absolute;
-    display: none;
-  }
-  .gridFooter {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold;
-    border-bottom: double;
-    border-color: cyan;
-    grid-row-gap: 15px;
-    margin: 10px;
-    width: auto;
-    color: #efeff3;
-    text-align: center;
-  }
   footer {
-    color: #efeff3;
-    text-align: center;
-    padding: 25px;
+    color: white;
   }
   .audio {
     width: 100px;

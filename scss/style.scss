@@ -93,104 +93,75 @@
         }
 
     }
-
     .gridformContenedor {
         display: flex;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
-        margin: 15px;
+        margin: 25px;
         flex-wrap: wrap;
-        font-family:$fuentePrincipal;
-        font-size: 25px;
         font-variant: small-caps;
-        width: 90%;
-        height: 90%;
+        width: $ancho*0,9;
+        height: $alto*0,9;
         align-items: center;
         flex-direction: row;
         justify-content: center;
-    }
-
-    .divFieldset {
-        display: flex;
-        font-family:$fuentePrincipal;
-        font-size: 20px;
-        font-variant: small-caps;
-        text-align: center;
-        width: 90%;
-        height: 90%;
-        color: white;
-        justify-content: center;
-        margin: 15px;
-        background-image: url(../imag/brillante-fondo.jpg);
-        border-radius: 25px;
-    }
-
-    .divPresentacion {
-        display: flex;
-        text-align: justify;
-        color: cyan;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 30px;
-        margin-top: 30px;
-        width: 90%;
-        font-size: 25px;
-        background-image: url(../imag/brillante-fondo.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        border-radius: 25px;
-
-        p {
-            font-style: italic;
+        .divFieldset {
+            font-family:$fuentePrincipal;
+            font-size: $sizeFuente/2;
             font-variant: small-caps;
-            padding: 20px 30px 20px 30px;
-            background-image: url(../imag/brillante-fondo.jpg);
+            text-align: $alineacion-titulos;
+            margin: $margenFormulario;
+            width: $ancho / 2;
+            height: $alto * 0,45;
+            color: $colorFormulario;
+            background-image: $formularioFondo;
+            border-radius: $bordesRadio*40;
+            .botonInput {
+                margin-bottom: 15px;
+            }
+        }
+        .divPresentacion {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+            width: $ancho/3;
+            margin: $margenFormulario;
+            p {
+                padding: $paddingParrafos;
+                font-style: $p-font-style;
+                font-variant: small-caps;
+                background-image: $formularioFondo;
+                background-size: $coberturaImagen;
+                background-repeat: $imagenRepetida;
+                text-align: $alineacion-parrafos;
+                color:$colorPresentacion;
+                border-radius: $bordesRadio*2;
+            }
+        }
+        .datosUbicacion {
+            display: flex;
+            text-align: $alineacion-parrafos;
+            color: $colorFormulario;
+            align-items: center;
+            margin: 20px;
+            padding: 10px;
+            width: $ancho*0.40;
+            flex-direction: column;
+        }
+        .iframeMapa {
+            display: flex;
+            width: 45%;
+            margin: 25px;
+            align-items: center;
+            text-align: center;
+            .map {
+                width: $ancho;
+                height: $alto*0,45;
+                border-radius: $bordesRadio*2;
+            }
         }
     }
-
-    .botonInput {
-        margin-bottom: 15px;
-    }
-
-    .datosUbicacion {
-        display: flex;
-        text-align: center;
-        color: white;
-        align-items: center;
-        margin: 10px;
-        margin-left: 15px;
-        font-size: 15px;
-        padding: 10px;
-        width: 80%;
-        flex-direction: column;
-        background-image: url(../imag/brillante-fondo.jpg);
-        border-radius: 20px;
-    }
-
-    .iframeMapa {
-        display: flex;
-        margin-top: 60px;
-        margin-bottom: 50px;
-        width: 90%;
-        height: 350px;
-        margin-left: 10px;
-        align-items: center;
-        text-align: center;
-    }
-
-    .map {
-        display: flex;
-        width: 100%;
-        height: 100%;
-        border-radius: 10px;
-        flex-direction: column;
-    }
-
-    form {
-        background-color: transparent;
-        width: 90%;
-    }
-
     .gridContenedor {
         display: grid;
         grid-template-columns: 1fr;
@@ -200,68 +171,35 @@
         justify-items: center;
         align-items: center;
     }
-
-
+    
     body {
-        background-image: url(../imag/column.jpg);
-        background-size: cover;
+        background-image: $fondo-body;
+        background-size: $coberturaImagen;
         background-attachment: fixed;
-
-    }
-
-
-    nav {
-        margin-bottom: 15px;
-        font-family:$fuentePrincipal;
-        font-size: 20px;
     }
 
     header {
         a {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            text-align: center;
-            color: cyan;
+            border:$border-link;
             padding: 10px;
             margin: 10px;
-            border-radius: 10px;
-            border-top: double;
-            border-left: double;
-            border-color: cyan;
-
-            &:link {
-                text-decoration: none
+            border-radius: $bordesRadio*2;
+            font-size: $sizeFuente;
+            transition: all 1s;
+            &:hover{
+                background-color: greenyellow;
             }
         }
     }
 
-    ul {
-        ul {
-            position: absolute;
-            display: none;
-        }
-    }
-
-    .gridFooter {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        flex-wrap: wrap;
+    nav {
+        margin-bottom: 15px;
         font-family:$fuentePrincipal;
-        border-bottom: double;
-        border-color: cyan;
-        grid-row-gap: 15px;
-        margin: 10px;
-        width: auto;
-        color: rgb(239, 239, 243);
-        text-align: center;
+        font-size: $sizeFuente - 10px;
     }
 
     footer {
-        color: rgb(239, 239, 243);
-        text-align: center;
-        padding: 25px;
+        color: $color-footer;
     }
 
     .audio {
@@ -275,8 +213,7 @@
         margin-right: 10px;
         z-index: 999;
         transition: 1s;
-
-        &:hover {
+         &:hover {
             transform: scale(1.4);
         }
     }
@@ -292,7 +229,6 @@
         margin-right: 10px;
         z-index: 999;
         transition: all 1s;
-
         &:hover {
             transform: scale(1.4);
         }
@@ -309,7 +245,6 @@
         margin-right: 10px;
         z-index: 999;
         transition: all 1s;
-
         &:hover {
             transform: scale(1.4);
         }
@@ -326,7 +261,6 @@
         margin-right: 10px;
         z-index: 999;
         transition: all 1s;
-
         &:hover {
             transform: scale(1.4);
         }
@@ -343,7 +277,6 @@
         margin-bottom: 30px;
         margin-right: 10px;
         transition: all 1s;
-
         &:hover {
             transform: scale(1.4);
         }
@@ -360,7 +293,6 @@
         margin-bottom: 30px;
         margin-right: 10px;
         transition: all 1s;
-
         &:hover {
             transform: scale(1.4);
         }
