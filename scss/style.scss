@@ -4,6 +4,7 @@
 @import "tamaño";
 @import "alineacion";
 
+
 @media screen and (min-width: 350px) {
     * {
         margin: 0;
@@ -209,6 +210,7 @@
         display: flex;
         right: 10px;
         top: 560px;
+        background-color: rgba(132, 255, 8, 0.377);
         margin-bottom: 30px;
         margin-right: 10px;
         z-index: 999;
@@ -305,6 +307,7 @@
         margin: 0;
         padding: 0;
     }
+
     .logo{
         border-radius: 30%;
         width: 70px;
@@ -596,5 +599,4 @@
             transform: scale(1.5);
         }
     }
-
 }
