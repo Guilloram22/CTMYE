@@ -38,15 +38,15 @@
         justify-content: center;
 
         p {
-            margin:$margenParrafos;
             padding: 15px;
             font-style:$p-font-style;
-            text-align: $alineacion-parrafos;
-            font-weight: bold;  
+            margin: $margenParrafos; 
+            color: $colorParrafo;
+            font-weight: bold;
             width: 70%;
             flex-wrap: wrap;
             border-radius: 10px;         
-            background-image: url(../imag/fondo-vertebral.jpg);
+            background-image: $parrafosFondo;
         }
 
         h3 {
@@ -210,7 +210,6 @@
         display: flex;
         right: 10px;
         top: 560px;
-        background-color: rgba(132, 255, 8, 0.377);
         margin-bottom: 30px;
         margin-right: 10px;
         z-index: 999;
