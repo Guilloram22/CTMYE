@@ -4,6 +4,49 @@
 @import "tamaño";
 @import "alineacion";
 
+// map-get
+
+h1{
+    color:map-get($map: $colorTitulos, $key: h1);
+}
+h3{
+    color:map-get($map: $colorTitulos, $key: h3);
+}
+
+// mixin
+
+@mixin H1-Estilos {
+    font-family: $fuentePrincipal;
+    font-size: $fuentePrincipal;
+    text-shadow: $texto-sombra;
+    text-align: $alineacion-titulos;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding: 15px;
+    background-image: $fondo-h1;
+    background-size: $coberturaImagen;
+}
+
+// include
+.estilo {
+    @include H1-Estilos;
+    border-radius: 30px;
+}
+
+@mixin parrafo ($radius:10px) {
+            margin: $margenParrafos;
+            padding: $paddingParrafos/2;
+            font-style: $fuentePrincipal;
+            font-size: $p-font-style;
+            font-weight: bold;
+            width: ($ancho)*0.7;
+            flex-wrap: wrap;
+            border-radius: $radius;
+            color: $colorParrafo;         
+            background: $parrafosFondo;
+            background-repeat: $imagenRepetida;
+            background-size: $coberturaImagen;       
+}
 
 @media screen and (min-width: 350px) {
     * {
@@ -18,18 +61,7 @@
     .navbar-brand{
         border: none;
     }
-    h1 {
-        font-family: $fuentePrincipal;
-        font-size: $sizeFuente;
-        color: $colorPrimario;
-        text-shadow: $texto-sombra;
-        text-align: $alineacion-titulos;
-        margin-bottom: 15px;
-        margin-top: 15px;
-        padding: 15px;
-        background-image: $fondo-h1;
-        background-size: $coberturaImagen;
-    }
+
     .serviciosGenerales {
         width: $ancho*0.9;
         display: flex;
@@ -38,15 +70,7 @@
         justify-content: center;
 
         p {
-            padding: 15px;
-            font-style:$p-font-style;
-            margin: $margenParrafos; 
-            color: $colorParrafo;
-            font-weight: bold;
-            width: 70%;
-            flex-wrap: wrap;
-            border-radius: 10px;         
-            background-image: $parrafosFondo;
+            @include parrafo(30px);  
         }
 
         h3 {
@@ -57,7 +81,6 @@
             border-color: $bordeColor-h3;
             font-size: $sizeFuente;
             font-family:$fuentePrincipal;
-            color:$color-h3;
         }
     }
 
@@ -75,22 +98,10 @@
             border-color: $bordeColor-h3;
             font-size: $sizeFuente;
             font-family:$fuentePrincipal;
-            color:$color-h3;
         }
 
         p {
-            margin: $margenParrafos;
-            padding: $paddingParrafos/2;
-            font-style: $p-font-style;
-            font-weight: bold;
-            font-size: $sizeFuente/2;
-            text-align: $alineacion-parrafos;
-            width: ($ancho)*0.7;
-            flex-wrap: wrap;
-            border-radius: $bordesRadio*1.5;         
-            background: $parrafosFondo;
-            background-repeat: $imagenRepetida;
-            background-size: $coberturaImagen;            
+            @include parrafo;            
         }
 
     }
@@ -314,16 +325,7 @@
     }
 
     h1 {
-        font-family: $fuentePrincipal;
-        font-size: $fuentePrincipal;
-        color: $colorPrimario;
-        text-shadow: $texto-sombra;
-        text-align: $alineacion-titulos;
-        margin-bottom: 15px;
-        margin-top: 15px;
-        padding: 15px;
-        background-image: $fondo-h1;
-        background-size: $coberturaImagen;
+        @include H1-Estilos;
     }
 
     .navbar-brand{
@@ -335,16 +337,7 @@
         display: flex;
         flex-direction: column;
        p {
-            margin: $margenParrafos;
-            padding: $paddingParrafos/2;
-            font-style: $fuentePrincipal;
-            font-size: $p-font-style;
-            width: ($ancho)*0,7;
-            flex-wrap: wrap;
-            border-radius: $bordesRadio*1,5;         
-            background: $parrafosFondo;
-            background-repeat: $imagenRepetida;
-            background-size: $coberturaImagen;            
+            @include parrafo(30px);           
         }
         h3 {
             margin: $margen-h3;
@@ -354,7 +347,6 @@
             border-color: $bordeColor-h3;
             font-size: $sizeFuente;
             font-family:$fuentePrincipal;
-            color:$color-h3;
         }
     }
 
@@ -370,20 +362,9 @@
             border-color: $bordeColor-h3;
             font-size: $sizeFuente;
             font-family:$fuentePrincipal;
-            color:$color-h3;
         }
         p {
-            margin: $margenParrafos;
-            padding: $paddingParrafos/2;
-            font-style: $fuentePrincipal;
-            font-size: $sizeFuente/2;
-            text-align: $p-font-style;
-            width: ($ancho)*0,7;
-            flex-wrap: wrap;
-            border-radius: $bordesRadio*1,5;         
-            background: $parrafosFondo;
-            background-repeat: $imagenRepetida;
-            background-size: $coberturaImagen;            
+            @include parrafo;            
         }
     }
 

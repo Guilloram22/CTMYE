@@ -1,8 +1,4 @@
-$colorPrimario: rgb(32, 107, 101);
-
-$color-h3: rgb(11, 243, 135);
-
-$colorParrafo: black;
+$colorParrafo: rgb(199, 29, 29);    
 
 $colorFormulario: white;
 
@@ -11,3 +7,11 @@ $colorPresentacion: cyan;
 $bordeColor-h3: rgb(232, 16, 240);
 
 $color-footer: white;
+
+$colorTitulos:(
+    h1: rgb(8, 236, 19),
+    h3:rgb(215, 63, 245),
+    parrafo: black,
+    footer: white,
+    borde-h3:rgb(232, 16, 240),
+)
