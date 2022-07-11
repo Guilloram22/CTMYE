@@ -1,0 +1,12 @@
+@mixin h3-movil {
+    margin: $margen-h3;
+    width: auto;
+    border-bottom: double;
+    border-radius: $bordesRadio*1.5;
+    border-color: $bordeColor-h3;
+    font-size: $sizeFuente;
+    font-family:$fuentePrincipal;
+}
+h3{
+    color:map-get($map: $colorTitulos, $key: h3);
+}

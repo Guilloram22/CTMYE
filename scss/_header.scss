@@ -1,0 +1,8 @@
+@mixin header-a {
+    border: $border-link;
+    padding: 10px;
+    margin: 10px;
+    border-radius: $bordesRadio*2;
+    font-size: $sizeFuente;
+    transition: all 1s;
+    }

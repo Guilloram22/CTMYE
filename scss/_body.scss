@@ -1,0 +1,6 @@
+$fondo-body: url("../imag/column.jpg");
+body {
+    background-image: $fondo-body;
+    background-size: $coberturaImagen;
+    background-attachment: fixed;
+}

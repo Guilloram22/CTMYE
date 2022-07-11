@@ -1,8 +1,14 @@
+/*mixin*/
 h1 {
-  color: #08ec13; }
+  color: #e743fd; }
 
 h3 {
   color: #d73ff5; }
+
+body {
+  background-image: url("../imag/column.jpg");
+  background-size: cover;
+  background-attachment: fixed; }
 
 .estilo {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold;
@@ -36,12 +42,12 @@ h3 {
       margin: 5px 20% 5px 20%;
       padding: 15px;
       font-style: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold;
-      font-size: justify;
+      text-align: justify;
       font-weight: bold;
       width: 70%;
       flex-wrap: wrap;
       border-radius: 30px;
-      color: #c71d1d;
+      color: #070707;
       background: url("../imag/fondo-vertebral.jpg");
       background-repeat: no-repeat;
       background-size: cover; }
@@ -71,23 +77,23 @@ h3 {
       margin: 5px 20% 5px 20%;
       padding: 15px;
       font-style: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold;
-      font-size: justify;
+      text-align: justify;
       font-weight: bold;
       width: 70%;
       flex-wrap: wrap;
       border-radius: 10px;
-      color: #c71d1d;
+      color: #070707;
       background: url("../imag/fondo-vertebral.jpg");
       background-repeat: no-repeat;
       background-size: cover; }
   .gridformContenedor {
     display: flex;
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: 1fr 1fr;
     margin: 25px;
     flex-wrap: wrap;
     font-variant: small-caps;
-    width: 0%, 9;
+    width: 100%, 5;
     height: 0%, 9;
     align-items: center;
     flex-direction: row;
@@ -98,7 +104,7 @@ h3 {
       font-variant: small-caps;
       text-align: center;
       margin: 15px;
-      width: 50%;
+      width: 90%;
       height: 0%, 45;
       color: white;
       background-image: url("../imag/brillante-fondo.jpg");
@@ -110,7 +116,7 @@ h3 {
       align-items: center;
       justify-content: center;
       margin-bottom: 30px;
-      width: 33.33333%;
+      width: 70%;
       margin: 15px; }
       .gridformContenedor .divPresentacion p {
         padding: 30px;
@@ -122,25 +128,26 @@ h3 {
         text-align: justify;
         color: cyan;
         border-radius: 20px; }
-    .gridformContenedor .datosUbicacion {
-      display: flex;
-      text-align: justify;
-      color: white;
-      align-items: center;
-      margin: 20px;
-      padding: 10px;
-      width: 40%;
-      flex-direction: column; }
-    .gridformContenedor .iframeMapa {
-      display: flex;
-      width: 45%;
-      margin: 25px;
-      align-items: center;
-      text-align: center; }
-      .gridformContenedor .iframeMapa .map {
-        width: 100%;
-        height: 0%, 45;
-        border-radius: 20px; }
+  .datosUbicacion {
+    display: flex;
+    text-align: justify;
+    color: white;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+    width: 60%;
+    flex-direction: column; }
+  .iframeMapa {
+    display: flex;
+    width: 70%;
+    height: 50%;
+    margin: 15px;
+    align-items: center;
+    text-align: center; }
+    .iframeMapa .map {
+      width: 100%;
+      height: 100%;
+      border-radius: 20px; }
   .gridContenedor {
     display: grid;
     grid-template-columns: 1fr;
@@ -149,10 +156,6 @@ h3 {
     margin: 10px;
     justify-items: center;
     align-items: center; }
-  body {
-    background-image: url("../imag/column.jpg");
-    background-size: cover;
-    background-attachment: fixed; }
   header a {
     border: double cyan top left;
     padding: 10px;
@@ -173,77 +176,77 @@ h3 {
     height: 55px;
     position: fixed;
     display: flex;
-    right: 10px;
-    top: 560px;
-    margin-bottom: 30px;
-    margin-right: 10px;
     z-index: 999;
-    transition: 1s; }
+    transition: 1s;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    right: 10px;
+    top: 560px; }
     .audio:hover {
       transform: scale(1.4); }
   .wspIcon {
-    width: 55px;
+    width: 100px;
     height: 55px;
     position: fixed;
     display: flex;
-    left: 10px;
-    top: 440px;
-    margin-bottom: 30px;
-    margin-right: 10px;
     z-index: 999;
-    transition: all 1s; }
+    transition: 1s;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    left: 10px;
+    top: 440px; }
     .wspIcon:hover {
       transform: scale(1.4); }
   .iconSugerencia {
-    width: 55px;
+    width: 100px;
     height: 55px;
     position: fixed;
     display: flex;
-    right: 10px;
-    top: 440px;
-    margin-bottom: 30px;
-    margin-right: 10px;
     z-index: 999;
-    transition: all 1s; }
+    transition: 1s;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    right: 10px;
+    top: 440px; }
     .iconSugerencia:hover {
       transform: scale(1.4); }
   .iconHome {
-    width: 55px;
+    width: 100px;
     height: 55px;
     position: fixed;
     display: flex;
-    right: 10px;
-    top: 500px;
-    margin-bottom: 30px;
-    margin-right: 10px;
     z-index: 999;
-    transition: all 1s; }
+    transition: 1s;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    right: 10px;
+    top: 500px; }
     .iconHome:hover {
       transform: scale(1.4); }
   .faceIcon {
-    width: 55px;
+    width: 100px;
     height: 55px;
     position: fixed;
     display: flex;
-    top: 500px;
-    left: 10px;
     z-index: 999;
+    transition: 1s;
     margin-bottom: 30px;
-    margin-right: 10px;
-    transition: all 1s; }
+    margin-left: 15px;
+    top: 500px;
+    left: 10px; }
     .faceIcon:hover {
       transform: scale(1.4); }
   .instaIcon {
-    width: 55px;
+    width: 100px;
     height: 55px;
     position: fixed;
     display: flex;
-    top: 560px;
-    left: 10px;
     z-index: 999;
+    transition: 1s;
     margin-bottom: 30px;
-    margin-right: 10px;
-    transition: all 1s; }
+    margin-left: 15px;
+    top: 560px;
+    left: 10px; }
     .instaIcon:hover {
       transform: scale(1.4); } }
 
@@ -275,12 +278,12 @@ h3 {
       margin: 5px 20% 5px 20%;
       padding: 15px;
       font-style: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold;
-      font-size: justify;
+      text-align: justify;
       font-weight: bold;
       width: 70%;
       flex-wrap: wrap;
       border-radius: 30px;
-      color: #c71d1d;
+      color: #070707;
       background: url("../imag/fondo-vertebral.jpg");
       background-repeat: no-repeat;
       background-size: cover; }
@@ -308,12 +311,12 @@ h3 {
       margin: 5px 20% 5px 20%;
       padding: 15px;
       font-style: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold;
-      font-size: justify;
+      text-align: justify;
       font-weight: bold;
       width: 70%;
       flex-wrap: wrap;
       border-radius: 10px;
-      color: #c71d1d;
+      color: #070707;
       background: url("../imag/fondo-vertebral.jpg");
       background-repeat: no-repeat;
       background-size: cover; }
@@ -410,76 +413,88 @@ h3 {
     height: 55px;
     position: fixed;
     display: flex;
+    z-index: 999;
+    transition: 1s;
+    margin-bottom: 30px;
+    margin-left: 15px;
     right: 10px;
     top: 600px;
     margin-bottom: 30px;
-    margin-right: 10px;
-    z-index: 999;
-    transition: all 1s; }
+    margin-right: 10px; }
     .audio:hover {
       transform: scale(1.5); }
   .wspIcon {
-    width: 55px;
+    width: 100px;
     height: 55px;
     position: fixed;
     display: flex;
+    z-index: 999;
+    transition: 1s;
+    margin-bottom: 30px;
+    margin-left: 15px;
     right: 10px;
     top: 480px;
     margin-bottom: 30px;
-    margin-right: 10px;
-    z-index: 999;
-    transition: all 1s; }
+    margin-right: 10px; }
     .wspIcon:hover {
       transform: scale(1.5); }
   .faceIcon {
-    width: 55px;
+    width: 100px;
     height: 55px;
     position: fixed;
     display: flex;
+    z-index: 999;
+    transition: 1s;
+    margin-bottom: 30px;
+    margin-left: 15px;
     top: 540px;
     right: 10px;
-    z-index: 999;
     margin-bottom: 30px;
-    margin-right: 10px;
-    transition: all 1s; }
+    margin-right: 10px; }
     .faceIcon:hover {
       transform: scale(1.5); }
   .instaIcon {
-    width: 55px;
+    width: 100px;
     height: 55px;
     position: fixed;
     display: flex;
+    z-index: 999;
+    transition: 1s;
+    margin-bottom: 30px;
+    margin-left: 15px;
     top: 600px;
     right: 10px;
-    z-index: 999;
     margin-bottom: 30px;
-    margin-right: 10px;
-    transition: all 1s; }
+    margin-right: 10px; }
     .instaIcon:hover {
       transform: scale(1.5); }
   .iconHome {
-    width: 55px;
+    width: 100px;
     height: 55px;
     position: fixed;
     display: flex;
+    z-index: 999;
+    transition: 1s;
+    margin-bottom: 30px;
+    margin-left: 15px;
     top: 540px;
     right: 10px;
-    z-index: 999;
     margin-bottom: 30px;
-    margin-right: 10px;
-    transition: all 1s; }
+    margin-right: 10px; }
     .iconHome:hover {
       transform: scale(1.5); }
   .iconSugerencia {
-    width: 55px;
+    width: 100px;
     height: 55px;
     position: fixed;
     display: flex;
+    z-index: 999;
+    transition: 1s;
+    margin-bottom: 30px;
+    margin-left: 15px;
     top: 480px;
     right: 10px;
-    z-index: 999;
     margin-bottom: 30px;
-    margin-right: 10px;
-    transition: all 1s; }
+    margin-right: 10px; }
     .iconSugerencia:hover {
       transform: scale(1.5); } }

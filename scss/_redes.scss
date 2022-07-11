@@ -1,0 +1,10 @@
+@mixin redes {
+    width: 100px;
+    height: 55px;
+    position: fixed;
+    display: flex;
+    z-index: 999;
+    transition: 1s;
+    margin-bottom: 30px;
+    margin-left: 15px;
+}

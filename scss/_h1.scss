@@ -1,0 +1,16 @@
+@mixin H1-Estilos {
+    font-family: $fuentePrincipal;
+    font-size: $fuentePrincipal;
+    text-shadow: $texto-sombra;
+    text-align: $alineacion-titulos;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding: 15px;
+    background-image: $fondo-h1;
+    background-size: $coberturaImagen;
+}
+/*mixin*/
+//map-get
+h1{
+    color:map-get($map: $colorTitulos, $key: h1);
+}

@@ -1,0 +1,15 @@
+@mixin parrafo ($radius:10px) {
+    margin: $margenParrafos;
+    padding: $paddingParrafos/2;
+    font-style: $fuentePrincipal;
+    text-align: justify;
+    font-weight: bold;
+    width: ($ancho)*0.7;
+    flex-wrap: wrap;
+    border-radius: $radius;
+    color: $colorParrafo;         
+    background: $parrafosFondo;
+    background-repeat: $imagenRepetida;
+    background-size: $coberturaImagen;       
+}
+$colorParrafo: rgb(7, 7, 7);  
