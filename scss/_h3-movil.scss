@@ -3,10 +3,16 @@
     width: auto;
     border-bottom: double;
     border-radius: $bordesRadio*1.5;
+    text-align: center;
     border-color: $bordeColor-h3;
     font-size: $sizeFuente;
     font-family:$fuentePrincipal;
 }
+//mixin
+//map-get
 h3{
     color:map-get($map: $colorTitulos, $key: h3);
+}
+h3{
+    color:map-get($map: $colorTitulos, $key: color-h3);
 }

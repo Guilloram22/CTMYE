@@ -1,31 +1,34 @@
 /*mixin*/
 h1 {
-  color: #e743fd; }
+  color: #0b1af1; }
 
 h3 {
-  color: #d73ff5; }
+  color: white; }
+
+h3 {
+  color: #101ff0; }
 
 body {
   background-image: url("../imag/column.jpg");
   background-size: cover;
   background-attachment: fixed; }
 
-.estilo {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold;
-  font-size: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold;
-  text-shadow: 5px 3px 5px #000203;
-  text-align: center;
-  margin-bottom: 15px;
-  margin-top: 15px;
-  padding: 15px;
-  background-image: url("../imag/sag.jpeg");
-  background-size: cover;
-  border-radius: 30px; }
-
 @media screen and (min-width: 350px) {
   * {
     margin: 0;
     padding: 0; }
+  .estilo {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold;
+    font-size: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold;
+    text-shadow: 5px 3px 5px #000203;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding: 15px;
+    background-image: url("../imag/sag.jpeg");
+    background-size: cover;
+    border-radius: 20px;
+    border-radius: 30px; }
   .logo {
     border-radius: 30%;
     width: 60px;
@@ -56,7 +59,8 @@ body {
       width: auto;
       border-bottom: double;
       border-radius: 15px;
-      border-color: #e810f0;
+      text-align: center;
+      border-color: #fa0707;
       font-size: 30px;
       font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold; }
   .paraQuienes {
@@ -70,7 +74,8 @@ body {
       width: auto;
       border-bottom: double;
       border-radius: 15px;
-      border-color: #e810f0;
+      text-align: center;
+      border-color: #fa0707;
       font-size: 30px;
       font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold; }
     .paraQuienes p {
@@ -81,7 +86,7 @@ body {
       font-weight: bold;
       width: 70%;
       flex-wrap: wrap;
-      border-radius: 10px;
+      border-radius: 30px;
       color: #070707;
       background: url("../imag/fondo-vertebral.jpg");
       background-repeat: no-repeat;
@@ -93,8 +98,8 @@ body {
     margin: 25px;
     flex-wrap: wrap;
     font-variant: small-caps;
-    width: 100%, 5;
-    height: 0%, 9;
+    width: 100%;
+    height: 100%;
     align-items: center;
     flex-direction: row;
     justify-content: center; }
@@ -104,11 +109,11 @@ body {
       font-variant: small-caps;
       text-align: center;
       margin: 15px;
-      width: 90%;
-      height: 0%, 45;
+      width: 70%;
+      height: 45%;
       color: white;
       background-image: url("../imag/brillante-fondo.jpg");
-      border-radius: 400px; }
+      border-radius: 20px; }
       .gridformContenedor .divFieldset .botonInput {
         margin-bottom: 15px; }
     .gridformContenedor .divPresentacion {
@@ -127,7 +132,8 @@ body {
         background-repeat: no-repeat;
         text-align: justify;
         color: cyan;
-        border-radius: 20px; }
+        border-radius: 20px;
+        font-weight: bold; }
   .datosUbicacion {
     display: flex;
     text-align: justify;
@@ -135,12 +141,12 @@ body {
     align-items: center;
     margin: 20px;
     padding: 10px;
-    width: 60%;
+    width: 90%;
     flex-direction: column; }
   .iframeMapa {
     display: flex;
-    width: 70%;
-    height: 50%;
+    width: 80%;
+    height: 100%;
     margin: 15px;
     align-items: center;
     text-align: center; }
@@ -148,19 +154,12 @@ body {
       width: 100%;
       height: 100%;
       border-radius: 20px; }
-  .gridContenedor {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-row-gap: 15px;
-    margin: 10px;
-    justify-items: center;
-    align-items: center; }
   header a {
     border: double cyan top left;
     padding: 10px;
     margin: 10px;
     border-radius: 20px;
+    border-bottom: double;
     font-size: 30px;
     transition: all 1s; }
     header a:hover {
@@ -254,10 +253,22 @@ body {
   * {
     margin: 0;
     padding: 0; }
+  .estilo {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold;
+    font-size: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold;
+    text-shadow: 5px 3px 5px #000203;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding: 15px;
+    background-image: url("../imag/sag.jpeg");
+    background-size: cover;
+    border-radius: 20px;
+    border-radius: 30px; }
   .logo {
     border-radius: 30%;
-    width: 70px;
-    height: 70px; }
+    width: 60px;
+    height: 60px; }
   h1 {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold;
     font-size: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold;
@@ -267,13 +278,16 @@ body {
     margin-top: 15px;
     padding: 15px;
     background-image: url("../imag/sag.jpeg");
-    background-size: cover; }
+    background-size: cover;
+    border-radius: 20px; }
   .navbar-brand {
     border: none; }
   .serviciosGenerales {
-    width: 0%, 9;
+    width: 90%;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    border-radius: 10px;
+    justify-content: center; }
     .serviciosGenerales p {
       margin: 5px 20% 5px 20%;
       padding: 15px;
@@ -289,22 +303,26 @@ body {
       background-size: cover; }
     .serviciosGenerales h3 {
       margin: 10px 30% 15px 30%;
-      width: 25%;
+      width: auto;
       border-bottom: double;
-      border-radius: 10px, 5;
-      border-color: #e810f0;
+      border-radius: 15px;
+      text-align: center;
+      border-color: #fa0707;
       font-size: 30px;
       font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold; }
   .paraQuienes {
-    width: 0%, 9;
+    width: 90%;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    border-radius: 10px;
+    justify-content: center; }
     .paraQuienes h3 {
       margin: 10px 30% 15px 30%;
-      width: 25%;
+      width: auto;
       border-bottom: double;
-      border-radius: 10px, 5;
-      border-color: #e810f0;
+      border-radius: 15px;
+      text-align: center;
+      border-color: #fa0707;
       font-size: 30px;
       font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold; }
     .paraQuienes p {
@@ -315,34 +333,35 @@ body {
       font-weight: bold;
       width: 70%;
       flex-wrap: wrap;
-      border-radius: 10px;
+      border-radius: 30px;
       color: #070707;
       background: url("../imag/fondo-vertebral.jpg");
       background-repeat: no-repeat;
       background-size: cover; }
   .gridformContenedor {
     display: flex;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     margin: 25px;
     flex-wrap: wrap;
     font-variant: small-caps;
-    width: 0%, 9;
-    height: 0%, 9;
+    width: 100%;
+    height: 100%;
     align-items: center;
     flex-direction: row;
-    justify-content: center; }
+    justify-content: center;
+    grid-template-columns: 1fr 1fr; }
     .gridformContenedor .divFieldset {
       font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold;
       font-size: 15px;
       font-variant: small-caps;
       text-align: center;
       margin: 15px;
-      width: 50%;
-      height: 0%, 45;
+      width: 35%;
+      height: 45%;
       color: white;
       background-image: url("../imag/brillante-fondo.jpg");
-      border-radius: 400px; }
+      border-radius: 20px; }
       .gridformContenedor .divFieldset .botonInput {
         margin-bottom: 15px; }
     .gridformContenedor .divPresentacion {
@@ -350,7 +369,7 @@ body {
       align-items: center;
       justify-content: center;
       margin-bottom: 30px;
-      width: 33.33333%;
+      width: 28%;
       margin: 15px; }
       .gridformContenedor .divPresentacion p {
         padding: 30px;
@@ -361,7 +380,8 @@ body {
         background-repeat: no-repeat;
         text-align: justify;
         color: cyan;
-        border-radius: 20px; }
+        border-radius: 20px;
+        font-weight: bold; }
     .gridformContenedor .datosUbicacion {
       display: flex;
       text-align: justify;
@@ -369,35 +389,27 @@ body {
       align-items: center;
       margin: 20px;
       padding: 10px;
-      width: 40%;
+      width: 36%;
       flex-direction: column; }
     .gridformContenedor .iframeMapa {
       display: flex;
-      width: 45%;
-      margin: 25px;
+      width: 32%;
+      height: 100%;
+      margin: 15px;
       align-items: center;
       text-align: center; }
       .gridformContenedor .iframeMapa .map {
         width: 100%;
-        height: 0%, 45;
+        align-items: center;
         border-radius: 20px; }
-  body {
-    background-image: url("../imag/column.jpg");
-    background-size: cover;
-    background-attachment: fixed; }
-  ul li {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold;
-    font-variant: small-caps;
-    padding: 10px;
-    margin: 10px;
-    display: flex;
-    display: inline-block; }
   header a {
     border: double cyan top left;
     padding: 10px;
     margin: 10px;
     border-radius: 20px;
-    font-size: 30px; }
+    border-bottom: double;
+    font-size: 30px;
+    transition: all 1s; }
     header a:hover {
       background-color: greenyellow; }
   nav {
@@ -406,8 +418,6 @@ body {
     font-size: 20px; }
   a:link {
     text-decoration: none; }
-  footer {
-    color: white; }
   .audio {
     width: 100px;
     height: 55px;

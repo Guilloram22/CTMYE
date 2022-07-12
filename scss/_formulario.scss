@@ -1,0 +1,12 @@
+@mixin formulario ($ancho:100%) {
+    font-family: $fuentePrincipal;
+    font-size: $sizeFuente/2;
+    font-variant: small-caps;
+    text-align: $alineacion-titulos;
+    margin: $margenFormulario;
+    width: $ancho*0.70;
+    height: $alto*0.45;
+    color: $colorFormulario;
+    background-image: $formularioFondo;
+    border-radius: $bordesRadio*2;
+}

@@ -1,3 +1,5 @@
+$fondo-h1: url("../imag/sag.jpeg");
+
 @mixin H1-Estilos {
     font-family: $fuentePrincipal;
     font-size: $fuentePrincipal;
@@ -8,6 +10,7 @@
     padding: 15px;
     background-image: $fondo-h1;
     background-size: $coberturaImagen;
+    border-radius: $bordesRadio*2;
 }
 /*mixin*/
 //map-get

@@ -10,16 +10,16 @@
 @import "header";
 @import "body";
 @import "redes";
+@import "logo";
+@import "formulario";
+@import "contenedor";
 
 
 
 // map-get
 
 // include
-.estilo {
-    @include H1-Estilos;
-    border-radius: 30px;
-}
+
 
 @media screen and (min-width: 350px) {
     * {
@@ -27,10 +27,13 @@
         padding: 0;
     }
 
+    .estilo {
+        @include H1-Estilos;
+        border-radius: 30px;
+    }
+
     .logo {
-        border-radius: 30%;
-        width: 60px;
-        height: 60px;
+        @include logo;
     }
 
     .navbar-brand {
@@ -41,7 +44,7 @@
         @include servicios-generales;
 
         p {
-            @include parrafo(30px);
+            @include parrafo;
         }
 
         h3 {
@@ -62,29 +65,10 @@
     }
 
     .gridformContenedor {
-        display: flex;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        margin: 25px;
-        flex-wrap: wrap;
-        font-variant: small-caps;
-        width: $ancho*1, 5;
-        height: $alto*0, 9;
-        align-items: center;
-        flex-direction: row;
-        justify-content: center;
+        @include formulario-contacto;
 
         .divFieldset {
-            font-family: $fuentePrincipal;
-            font-size: $sizeFuente/2;
-            font-variant: small-caps;
-            text-align: $alineacion-titulos;
-            margin: $margenFormulario;
-            width: $ancho*0.9;
-            height: $alto*0, 45;
-            color: $colorFormulario;
-            background-image: $formularioFondo;
-            border-radius: $bordesRadio*40;
+            @include formulario;
 
             .botonInput {
                 margin-bottom: 15px;
@@ -92,45 +76,20 @@
         }
 
         .divPresentacion {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 30px;
-            width: $ancho*0.7;
-            margin: $margenFormulario;
+            @include contenedor-presentacion;
 
             p {
-                padding: $paddingParrafos;
-                font-style: $p-font-style;
-                font-variant: small-caps;
-                background-image: $formularioFondo;
-                background-size: $coberturaImagen;
-                background-repeat: $imagenRepetida;
-                text-align: $alineacion-parrafos;
-                color: $colorPresentacion;
-                border-radius: $bordesRadio*2;
+                @include parrafo-presentacion;
             }
         }
     }
 
     .datosUbicacion {
-        display: flex;
-        text-align: $alineacion-parrafos;
-        color: $colorFormulario;
-        align-items: center;
-        margin: 20px;
-        padding: 10px;
-        width: $ancho*0.60;
-        flex-direction: column;
+        @include contenedor-ubicacion;
     }
 
     .iframeMapa {
-        display: flex;
-        width: 70%;
-        height: 50%;
-        margin: 15px;
-        align-items: center;
-        text-align: center;
+        @include iframe;
 
         .map {
             width: $ancho;
@@ -139,19 +98,12 @@
         }
     }
 
-    .gridContenedor {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-row-gap: 15px;
-        margin: 10px;
-        justify-items: center;
-        align-items: center;
-    }
+
 
     header {
         a {
             @include header-a;
+
             &:hover {
                 background-color: greenyellow;
             }
@@ -236,10 +188,13 @@
         padding: 0;
     }
 
+    .estilo {
+        @include H1-Estilos;
+        border-radius: 30px;
+    }
+
     .logo {
-        border-radius: 30%;
-        width: 70px;
-        height: 70px;
+        @include logo;
     }
 
     h1 {
@@ -251,38 +206,22 @@
     }
 
     .serviciosGenerales {
-        width: ($ancho)*0, 9;
-        display: flex;
-        flex-direction: column;
+        @include servicios-generales;
 
         p {
-            @include parrafo(30px);
+            @include parrafo;
         }
 
         h3 {
-            margin: $margen-h3;
-            width: ($ancho)/4;
-            border-bottom: double;
-            border-radius: $bordesRadio*1, 5;
-            border-color: $bordeColor-h3;
-            font-size: $sizeFuente;
-            font-family: $fuentePrincipal;
+            @include h3-movil;
         }
     }
 
     .paraQuienes {
-        width: ($ancho)*0, 9;
-        display: flex;
-        flex-direction: column;
+        @include servicios-generales;
 
         h3 {
-            margin: $margen-h3;
-            width: ($ancho)/4;
-            border-bottom: double;
-            border-radius: $bordesRadio*1, 5;
-            border-color: $bordeColor-h3;
-            font-size: $sizeFuente;
-            font-family: $fuentePrincipal;
+            @include h3-movil;
         }
 
         p {
@@ -291,29 +230,12 @@
     }
 
     .gridformContenedor {
-        display: flex;
+        @include formulario-contacto;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        margin: 25px;
-        flex-wrap: wrap;
-        font-variant: small-caps;
-        width: $ancho*0, 9;
-        height: $alto*0, 9;
-        align-items: center;
-        flex-direction: row;
-        justify-content: center;
+
 
         .divFieldset {
-            font-family: $fuentePrincipal;
-            font-size: $sizeFuente/2;
-            font-variant: small-caps;
-            text-align: $alineacion-titulos;
-            margin: $margenFormulario;
-            width: $ancho / 2;
-            height: $alto * 0, 45;
-            color: $colorFormulario;
-            background-image: $formularioFondo;
-            border-radius: $bordesRadio*40;
+            @include formulario (50%);
 
             .botonInput {
                 margin-bottom: 15px;
@@ -321,77 +243,32 @@
         }
 
         .divPresentacion {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 30px;
-            width: $ancho/3;
-            margin: $margenFormulario;
+            @include contenedor-presentacion (40%);
 
             p {
-                padding: $paddingParrafos;
-                font-style: $p-font-style;
-                font-variant: small-caps;
-                background-image: $formularioFondo;
-                background-size: $coberturaImagen;
-                background-repeat: $imagenRepetida;
-                text-align: $alineacion-parrafos;
-                color: $colorPresentacion;
-                border-radius: $bordesRadio*2;
+                @include parrafo-presentacion;
             }
         }
 
         .datosUbicacion {
-            display: flex;
-            text-align: $alineacion-parrafos;
-            color: $colorFormulario;
-            align-items: center;
-            margin: 20px;
-            padding: 10px;
-            width: $ancho*0.40;
-            flex-direction: column;
+            @include contenedor-ubicacion (40%);
         }
 
         .iframeMapa {
-            display: flex;
-            width: 45%;
-            margin: 25px;
-            align-items: center;
-            text-align: center;
+            @include iframe (40%);
 
             .map {
                 width: $ancho;
-                height: $alto*0, 45;
+                align-items: center;
                 border-radius: $bordesRadio*2;
             }
         }
 
     }
 
-    body {
-        background-image: $fondo-body;
-        background-size: $coberturaImagen;
-        background-attachment: fixed;
-    }
-
-    ul {
-        li {
-            font-family: $fuentePrincipal;
-            font-variant: small-caps;
-            padding: 10px;
-            margin: 10px;
-            display: flex;
-            display: inline-block;
-        }
-    }
-
     header {
         a {
-            border: $border-link;
-            padding: 10px;
-            margin: 10px;
-            border-radius: $bordesRadio*2;
-            font-size: $sizeFuente;
+            @include header-a;
 
             &:hover {
                 background-color: greenyellow;
@@ -407,10 +284,6 @@
 
     a:link {
         text-decoration: none
-    }
-
-    footer {
-        color: rgb(255, 255, 255);
     }
 
     .audio {

@@ -6,10 +6,23 @@
     font-weight: bold;
     width: ($ancho)*0.7;
     flex-wrap: wrap;
-    border-radius: $radius;
+    border-radius: $radius*3;
     color: $colorParrafo;         
     background: $parrafosFondo;
     background-repeat: $imagenRepetida;
     background-size: $coberturaImagen;       
 }
 $colorParrafo: rgb(7, 7, 7);  
+
+@mixin parrafo-presentacion {
+    padding: $paddingParrafos;
+    font-style: $p-font-style;
+    font-variant: small-caps;
+    background-image: $formularioFondo;
+    background-size: $coberturaImagen;
+    background-repeat: $imagenRepetida;
+    text-align: $alineacion-parrafos;
+    color: $colorPresentacion;
+    border-radius: $bordesRadio*2;
+    font-weight: bold;
+}
