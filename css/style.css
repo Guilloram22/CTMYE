@@ -158,7 +158,7 @@ body {
     border: double cyan top left;
     padding: 10px;
     margin: 10px;
-    border-radius: 20px;
+    border-radius: 30px;
     border-bottom: double;
     font-size: 30px;
     transition: all 1s; }
@@ -406,7 +406,7 @@ body {
     border: double cyan top left;
     padding: 10px;
     margin: 10px;
-    border-radius: 20px;
+    border-radius: 30px;
     border-bottom: double;
     font-size: 30px;
     transition: all 1s; }
@@ -508,3 +508,269 @@ body {
     margin-right: 10px; }
     .iconSugerencia:hover {
       transform: scale(1.5); } }
+
+@media screen and (min-width: 750px) {
+  * {
+    margin: 0;
+    padding: 0; }
+  .estilo {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold;
+    font-size: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold;
+    text-shadow: 5px 3px 5px #000203;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding: 15px;
+    background-image: url("../imag/sag.jpeg");
+    background-size: cover;
+    border-radius: 20px;
+    border-radius: 30px; }
+  .logo {
+    border-radius: 30%;
+    width: 60px;
+    height: 60px; }
+  h1 {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold;
+    font-size: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold;
+    text-shadow: 5px 3px 5px #000203;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding: 15px;
+    background-image: url("../imag/sag.jpeg");
+    background-size: cover;
+    border-radius: 20px; }
+  .navbar-brand {
+    border: none; }
+  .serviciosGenerales {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    justify-content: center; }
+    .serviciosGenerales p {
+      margin: 5px 20% 5px 20%;
+      padding: 15px;
+      font-style: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold;
+      text-align: justify;
+      font-weight: bold;
+      width: 70%;
+      flex-wrap: wrap;
+      border-radius: 30px;
+      color: #070707;
+      background: url("../imag/fondo-vertebral.jpg");
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .serviciosGenerales h3 {
+      margin: 10px 30% 15px 30%;
+      width: auto;
+      border-bottom: double;
+      border-radius: 15px;
+      text-align: center;
+      border-color: #fa0707;
+      font-size: 30px;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold; }
+  .paraQuienes {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    justify-content: center; }
+    .paraQuienes h3 {
+      margin: 10px 30% 15px 30%;
+      width: auto;
+      border-bottom: double;
+      border-radius: 15px;
+      text-align: center;
+      border-color: #fa0707;
+      font-size: 30px;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold; }
+    .paraQuienes p {
+      margin: 5px 20% 5px 20%;
+      padding: 15px;
+      font-style: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold;
+      text-align: justify;
+      font-weight: bold;
+      width: 70%;
+      flex-wrap: wrap;
+      border-radius: 30px;
+      color: #070707;
+      background: url("../imag/fondo-vertebral.jpg");
+      background-repeat: no-repeat;
+      background-size: cover; }
+  .gridformContenedor {
+    display: flex;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 25px;
+    flex-wrap: wrap;
+    font-variant: small-caps;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr; }
+    .gridformContenedor .divFieldset {
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold;
+      font-size: 15px;
+      font-variant: small-caps;
+      text-align: center;
+      margin: 15px;
+      width: 35%;
+      height: 45%;
+      color: white;
+      background-image: url("../imag/brillante-fondo.jpg");
+      border-radius: 20px; }
+      .gridformContenedor .divFieldset .botonInput {
+        margin-bottom: 15px; }
+    .gridformContenedor .divPresentacion {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 30px;
+      width: 28%;
+      margin: 15px; }
+      .gridformContenedor .divPresentacion p {
+        padding: 30px;
+        font-style: justify;
+        font-variant: small-caps;
+        background-image: url("../imag/brillante-fondo.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: justify;
+        color: cyan;
+        border-radius: 20px;
+        font-weight: bold; }
+    .gridformContenedor .datosUbicacion {
+      display: flex;
+      text-align: justify;
+      color: white;
+      align-items: center;
+      margin: 20px;
+      padding: 10px;
+      width: 36%;
+      flex-direction: column; }
+    .gridformContenedor .iframeMapa {
+      display: flex;
+      width: 32%;
+      height: 100%;
+      margin: 15px;
+      align-items: center;
+      text-align: center; }
+      .gridformContenedor .iframeMapa .map {
+        width: 100%;
+        align-items: center;
+        border-radius: 20px; }
+  header a {
+    border: double cyan top left;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 30px;
+    border-bottom: double;
+    font-size: 30px;
+    transition: all 1s; }
+    header a:hover {
+      background-color: greenyellow; }
+  nav {
+    margin-bottom: 15px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold;
+    font-size: 20px; }
+  a:link {
+    text-decoration: none; }
+  .audio {
+    width: 100px;
+    height: 55px;
+    position: fixed;
+    display: flex;
+    z-index: 999;
+    transition: 1s;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    right: 10px;
+    top: 600px;
+    margin-bottom: 30px;
+    margin-right: 10px; }
+    .audio:hover {
+      transform: scale(1.5); }
+  .wspIcon {
+    width: 100px;
+    height: 55px;
+    position: fixed;
+    display: flex;
+    z-index: 999;
+    transition: 1s;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    right: 10px;
+    top: 480px;
+    margin-bottom: 30px;
+    margin-right: 10px; }
+    .wspIcon:hover {
+      transform: scale(1.5); }
+  .faceIcon {
+    width: 100px;
+    height: 55px;
+    position: fixed;
+    display: flex;
+    z-index: 999;
+    transition: 1s;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    top: 540px;
+    right: 10px;
+    margin-bottom: 30px;
+    margin-right: 10px; }
+    .faceIcon:hover {
+      transform: scale(1.5); }
+  .instaIcon {
+    width: 100px;
+    height: 55px;
+    position: fixed;
+    display: flex;
+    z-index: 999;
+    transition: 1s;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    top: 600px;
+    right: 10px;
+    margin-bottom: 30px;
+    margin-right: 10px; }
+    .instaIcon:hover {
+      transform: scale(1.5); }
+  .iconHome {
+    width: 100px;
+    height: 55px;
+    position: fixed;
+    display: flex;
+    z-index: 999;
+    transition: 1s;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    top: 540px;
+    right: 10px;
+    margin-bottom: 30px;
+    margin-right: 10px; }
+    .iconHome:hover {
+      transform: scale(1.5); }
+  .iconSugerencia {
+    width: 100px;
+    height: 55px;
+    position: fixed;
+    display: flex;
+    z-index: 999;
+    transition: 1s;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    top: 480px;
+    right: 10px;
+    margin-bottom: 30px;
+    margin-right: 10px; }
+    .iconSugerencia:hover {
+      transform: scale(1.5); } }
+
+.carrus-multimedia {
+  border-radius: 30px; }
+
+.carrus-index {
+  border-radius: 30px; }
