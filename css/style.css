@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*mixin*/
 h1 {
   color: #0b1af1; }
@@ -12,11 +13,31 @@ body {
   background-image: url("../imag/column.jpg");
   background-size: cover;
   background-attachment: fixed; }
+=======
+h1 {
+  color: #08ec13; }
+
+h3 {
+  color: #d73ff5; }
+
+.estilo {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold;
+  font-size: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold;
+  text-shadow: 5px 3px 5px #000203;
+  text-align: center;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  padding: 15px;
+  background-image: url("../imag/sag.jpeg");
+  background-size: cover;
+  border-radius: 30px; }
+>>>>>>> sass
 
 @media screen and (min-width: 350px) {
   * {
     margin: 0;
     padding: 0; }
+<<<<<<< HEAD
   .estilo {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold;
     font-size: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold;
@@ -29,6 +50,8 @@ body {
     background-size: cover;
     border-radius: 20px;
     border-radius: 30px; }
+=======
+>>>>>>> sass
   .logo {
     border-radius: 30%;
     width: 60px;
@@ -45,12 +68,20 @@ body {
       margin: 5px 20% 5px 20%;
       padding: 15px;
       font-style: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold;
+<<<<<<< HEAD
       text-align: justify;
+=======
+      font-size: justify;
+>>>>>>> sass
       font-weight: bold;
       width: 70%;
       flex-wrap: wrap;
       border-radius: 30px;
+<<<<<<< HEAD
       color: #070707;
+=======
+      color: #c71d1d;
+>>>>>>> sass
       background: url("../imag/fondo-vertebral.jpg");
       background-repeat: no-repeat;
       background-size: cover; }
@@ -82,12 +113,21 @@ body {
       margin: 5px 20% 5px 20%;
       padding: 15px;
       font-style: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold;
+<<<<<<< HEAD
       text-align: justify;
       font-weight: bold;
       width: 70%;
       flex-wrap: wrap;
       border-radius: 30px;
       color: #070707;
+=======
+      font-size: justify;
+      font-weight: bold;
+      width: 70%;
+      flex-wrap: wrap;
+      border-radius: 10px;
+      color: #c71d1d;
+>>>>>>> sass
       background: url("../imag/fondo-vertebral.jpg");
       background-repeat: no-repeat;
       background-size: cover; }
@@ -292,12 +332,20 @@ body {
       margin: 5px 20% 5px 20%;
       padding: 15px;
       font-style: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold;
+<<<<<<< HEAD
       text-align: justify;
+=======
+      font-size: justify;
+>>>>>>> sass
       font-weight: bold;
       width: 70%;
       flex-wrap: wrap;
       border-radius: 30px;
+<<<<<<< HEAD
       color: #070707;
+=======
+      color: #c71d1d;
+>>>>>>> sass
       background: url("../imag/fondo-vertebral.jpg");
       background-repeat: no-repeat;
       background-size: cover; }
@@ -329,12 +377,21 @@ body {
       margin: 5px 20% 5px 20%;
       padding: 15px;
       font-style: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, bold;
+<<<<<<< HEAD
       text-align: justify;
       font-weight: bold;
       width: 70%;
       flex-wrap: wrap;
       border-radius: 30px;
       color: #070707;
+=======
+      font-size: justify;
+      font-weight: bold;
+      width: 70%;
+      flex-wrap: wrap;
+      border-radius: 10px;
+      color: #c71d1d;
+>>>>>>> sass
       background: url("../imag/fondo-vertebral.jpg");
       background-repeat: no-repeat;
       background-size: cover; }
