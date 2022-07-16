@@ -10,9 +10,7 @@
 }
 //mixin
 //map-get
-h3{
-    color:map-get($map: $colorTitulos, $key: h3);
-}
+
 h3{
     color:map-get($map: $colorTitulos, $key: color-h3);
 }

@@ -10,7 +10,7 @@ $fondo-h1: url("../imag/sag.jpeg");
     padding: 15px;
     background-image: $fondo-h1;
     background-size: $coberturaImagen;
-    border-radius: $bordesRadio*2;
+    border-radius: $bordesRadio;
 }
 /*mixin*/
 //map-get
